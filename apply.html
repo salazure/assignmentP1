@@ -14,15 +14,105 @@
       <a href=about.html>About</a>
       <a href=enhancements.html>Enhancements</a>
     </div>
-  </body>
-</html>
+
+    
+    <br>
+    <br>
+    <br>
+    
+    
+    <form autocomplete="on" method="POST"> <!--  action="/Action/Page/Path/Here.php"(where the form data is submitted to)  -->
+
+      <label for="refnum"> Reference Number: </label> <br>
+      <input type="text" id="refnum" name="refnum" maxlength="5" title="5 characters, alphanumeric only"> <br> <br>
+
+      <label for="fname"> First Name: </label> <br>
+      <input type="text" id="fname" name="fname" pattern="[A-Za-z]{1,}" maxlength="20" title="Letters only"> <br> <br>
+
+      <label for="fname"> Last Name: </label> <br>
+      <input type="text" id="lname" name="lname" pattern="[A-Za-z]{1,}" maxlength="20" title="Letters only"> <br> <br>
+
+      <label for="dob"> Date of Birth: </label> <br>
+      <input type="date" id="dob" name="dob"> <br> <br>		<!-- min="1850-00-00" max="2023-00-00" //could put this in  -->
+
+      <fieldset>
+        <legend> Gender </legend>
+
+        <input type="radio" id="man" name="gender" value="Man">
+        <label for="man"> Man </label> <br>
+
+        <input type="radio" id="woman" name="gender" value="Woman">
+        <label for="woman"> Woman </label> <br>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other"> Other </label> <br>
+
+        <input type="radio" id="idk" name="gender" value="Prefer not to say">
+        <label for="idk"> Prefer Not To Say </label> <br>
+
+        <input type="radio" id="goofy" name="gender" value="Apache Attack Helicopter">
+        <label for="goofy"> Apache Attack Helicopter </label> <br>
+
+      </fieldset> <br>
+
+      <label for="address"> Street Address: </label> <br>
+      <input type="text" id="address" name="address" maxlength="40"> <br> <br>
+
+      <label for="suburb"> Suburb/Town: </label> <br>
+      <input type="text" id="suburb" name="suburb" maxlength="40"> <br> <br>
+
+      <label for="state"> State: </label>           <!-- should we chuck a break here? -->
+      <select id="state" name="state">
+        <option value="vic">VIC</option>
+        <option value="nsw">NSW</option>
+        <option value="qld">QLD</option>
+        <option value="nt">NT</option>
+        <option value="wa">WA</option>
+        <option value="sa">SA</option>
+        <option value="tas">TAS</option>
+        <option value="act">ACT</option>
+      </select> <br> <br>
+      <label for="email"> Email: </label> <br>
+      <input type="email" id="email" name="email"> <br> <br>
+
+      <label for="phone"> Phone Number: </label> <br>
+      <input type="tel" id="phone" name="phone" pattern="[\d\s]{8,12}"> <br> <br>
+
+      <label for="skills"> Skill and Qualifications: </label> <br>
+      <input type="checkbox" name="skill1" id="skill1" value="masters">    				  
+      <label for="skill1"> Master's Degree </label> <br>
+      <input type="checkbox" name="skill2" id="skill2" value="cissp">
+      <label for="skill2"> Valid CISSP Certificate </label> <br>
+      <input type="checkbox" name="skill1" id="skill3" value="exp">
+      <label for="skill3"> Relevant Experience </label> <br>
+      <input type="checkbox" name="skill1" id="skill4" value="ccie">
+      <label for="skill4"> CCIE Cert </label> <br>
+      <input type="checkbox" name="skill1" id="skill5" value="tsc">
+      <label for="skill5"> Valid Top Secret Clearance License </label> <br>
+      <input type="checkbox" name="skill1" id="skill6" value="adminexp">
+      <label for="skill6"> Experience with configurating, administration, troubleshooting, and support networking devices </label> <br>
+      <input type="checkbox" name="skill1" id="skill7" value="linuxexp">
+      <label for="skill7"> Experience with Linux </label> <br> <br>
+
+      <label for="otherskills"> Other Skills... </label> <br>
+      <textarea name="otherskills" id="otherskills" rows="30" cols="60">
+      &#x2022; can use chopsticks
+      </textarea> <br> <br>
+
+
+      <input type="submit">
+    </form>
+
+
+<!-- Is there anything else I should include? -->
+
+
 
 <!-- 
 Requirements:
-
-Job reference number    exactly 5 alphanumeric characters
-First name              max 20 alpha characters
-Last name               max 20 alpha characters
+Job reference number    exactly 5 alphanumeric characters`
+First name              max 20 alpha characters`
+Last name               max 20 alpha characters`
 Date of birth           dd/mm/yyyy
 Gender                  radio inputs grouped using a fieldset and legend
 Street Address          max 40 characters
@@ -32,7 +122,17 @@ Postcode                exactly 4 digits
 Email address           validate format
 Phone number            8 to 12 digits, or spaces
 Skill list - the last item in list
-should read “Other skills...”           checkbox inputs
+should read “Other skills...”           checkbox inputs				//does this mean we need the input textbox to appear when user checks "Other Skills..." box?
 Other skills            textarea
-
 -->
+
+
+
+</body>
+</html>
+
+
+    
+    
+    
+    
