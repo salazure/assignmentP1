@@ -1,108 +1,128 @@
 <!DOCTYPE html>
-<html>
-  <head>
+
+<html lang="en">
+<head>
     <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="navbar">
-        <a href=enhancements.html>Enhancements</a>
-        <a href=about.html>About Us</a>
-        <a href=apply.html class="active">Apply Now</a>
-        <a href=jobs.html>Job Opportunities</a>
-        <a href=index.html>Homepage</a>
+    <div class="heading">
+        <img class="topimg" src="backheading.png" />
     </div>
+    <div class="navbar">
+        <a class="link" href=enhancements.html>Enhancements</a>
+        <a class="link" href=about.html>About Us</a>
+        <a class="link active" href=apply.html>Apply Now</a>
+        <a class="link" href=jobs.html>Job Opportunities</a>
+        <a class="link" href=index.html>Homepage</a>
+        <a href="index.html">
+            <img class="logo" src="betterlogo.png" />
+        </a>
+    </div>
+    <div class="content">
+        <section class="headAll">
+            <h1>APPLY BELOW:</h1>
+        </section>
+        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST" autocomplete="on">
 
-    
-    <br>
-    <br>
-    <br>
-    
-    
-    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST" autocomplete="on">
+            <label for="refnum"> Reference Number: </label> <br>
+            <input type="text" id="refnum" name="refnum" maxlength="5" pattern="[A-Za-z\d]{5}" title="5 characters, alphanumeric only" required> <br> <br>
 
-      <label for="refnum"> Reference Number: </label> <br>
-      <input type="text" id="refnum" name="refnum" maxlength="5" pattern="[A-Za-z\d]{5}" title="5 characters, alphanumeric only" required> <br> <br>
+            <label for="fname"> First Name: </label> <br>
+            <input type="text" id="fname" name="fname" pattern="[A-Za-z]{1,}" maxlength="20" title="Letters only" required> <br> <br>
 
-      <label for="fname"> First Name: </label> <br>
-      <input type="text" id="fname" name="fname" pattern="[A-Za-z]{1,}" maxlength="20" title="Letters only" required> <br> <br>
+            <label for="fname"> Last Name: </label> <br>
+            <input type="text" id="lname" name="lname" pattern="[A-Za-z]{1,}" maxlength="20" title="Letters only" required> <br> <br>
 
-      <label for="fname"> Last Name: </label> <br>
-      <input type="text" id="lname" name="lname" pattern="[A-Za-z]{1,}" maxlength="20" title="Letters only" required> <br> <br>
+            <label for="dob"> Date of Birth: </label> <br>
+            <input type="date" id="dob" name="dob" required> <br> <br>		<!-- min="1850-00-00" max="2023-00-00" //could put this in  -->
 
-      <label for="dob"> Date of Birth: </label> <br>
-      <input type="date" id="dob" name="dob" required> <br> <br>		<!-- min="1850-00-00" max="2023-00-00" //could put this in  -->
+            <fieldset>
+                <legend> Gender </legend>
 
-      <fieldset>
-        <legend> Gender </legend>
+                <input type="radio" id="man" name="gender" value="Man" required>
+                <label for="man"> Man </label> <br>
 
-        <input type="radio" id="man" name="gender" value="Man" required>
-        <label for="man"> Man </label> <br>
+                <input type="radio" id="woman" name="gender" value="Woman">
+                <label for="woman"> Woman </label> <br>
 
-        <input type="radio" id="woman" name="gender" value="Woman">
-        <label for="woman"> Woman </label> <br>
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other"> Other </label> <br>
 
-        <input type="radio" id="other" name="gender" value="Other">
-        <label for="other"> Other </label> <br>
+                <input type="radio" id="idk" name="gender" value="Prefer not to say">
+                <label for="idk"> Prefer Not To Say </label> <br>
 
-        <input type="radio" id="idk" name="gender" value="Prefer not to say">
-        <label for="idk"> Prefer Not To Say </label> <br>
+                <input type="radio" id="goofy" name="gender" value="Apache Attack Helicopter">
+                <label for="goofy"> Apache Attack Helicopter </label> <br>
 
-        <input type="radio" id="goofy" name="gender" value="Apache Attack Helicopter">
-        <label for="goofy"> Apache Attack Helicopter </label> <br>
-        
-        <input type="radio" id="goofy2" name="gender" value="Walmart Bag">
-        <label for="goof2y"> Walmart Bag </label> <br>
+                <input type="radio" id="goofy2" name="gender" value="Walmart Bag">
+                <label for="goof2y"> Walmart Bag </label> <br>
 
-      </fieldset> <br>
+            </fieldset> <br>
 
-      <label for="address"> Street Address: </label> <br>
-      <input type="text" id="address" name="address" maxlength="40" required> <br> <br>
+            <label for="address"> Street Address: </label> <br>
+            <input type="text" id="address" name="address" maxlength="40" required> <br> <br>
 
-      <label for="suburb"> Suburb/Town: </label> <br>
-      <input type="text" id="suburb" name="suburb" maxlength="40" required> <br> <br>
+            <label for="suburb"> Suburb/Town: </label> <br>
+            <input type="text" id="suburb" name="suburb" maxlength="40" required> <br> <br>
 
-      <label for="state"> State: </label>           <!-- should we chuck a break here? -->
-      <select id="state" name="state" required>
-        <option value="vic">VIC</option>
-        <option value="nsw">NSW</option>
-        <option value="qld">QLD</option>
-        <option value="nt">NT</option>
-        <option value="wa">WA</option>
-        <option value="sa">SA</option>
-        <option value="tas">TAS</option>
-        <option value="act">ACT</option>
-      </select> <br> <br>
-      <label for="email"> Email: </label> <br>
-      <input type="email" id="email" name="email" required> <br> <br>
+            <label for="state"> State: </label>           <!-- should we chuck a break here? -->
+            <select id="state" name="state" required>
+                <option value="vic">VIC</option>
+                <option value="nsw">NSW</option>
+                <option value="qld">QLD</option>
+                <option value="nt">NT</option>
+                <option value="wa">WA</option>
+                <option value="sa">SA</option>
+                <option value="tas">TAS</option>
+                <option value="act">ACT</option>
+            </select> <br> <br>
+            <label for="email"> Email: </label> <br>
+            <input type="email" id="email" name="email" required> <br> <br>
 
-      <label for="phone"> Phone Number: </label> <br>
-      <input type="tel" id="phone" name="phone" pattern="[\d\s]{8,12}" required> <br> <br>
+            <label for="phone"> Phone Number: </label> <br>
+            <input type="tel" id="phone" name="phone" pattern="[\d\s]{8,12}" required> <br> <br>
 
-      <label for="skills"> Skill and Qualifications: </label> <br>
-      <input type="checkbox" name="skills" id="skill1" value="masters">    				  
-      <label for="skill1"> Master's Degree </label> <br>
-      <input type="checkbox" name="skills" id="skill2" value="cissp">
-      <label for="skill2"> Valid CISSP Certificate </label> <br>
-      <input type="checkbox" name="skills" id="skill3" value="exp">
-      <label for="skill3"> Relevant Experience </label> <br>
-      <input type="checkbox" name="skills" id="skill4" value="ccie">
-      <label for="skill4"> CCIE Cert </label> <br>
-      <input type="checkbox" name="skills" id="skill5" value="tsc">
-      <label for="skill5"> Valid Top Secret Clearance License </label> <br>
-      <input type="checkbox" name="skills" id="skill6" value="adminexp">
-      <label for="skill6"> Experience with configurating, administration, troubleshooting, and support networking devices </label> <br>
-      <input type="checkbox" name="skills" id="skill7" value="linuxexp" selected>
-      <label for="skill7"> Experience with Linux </label> <br> <br>
+            <label for="skills"> Skill and Qualifications: </label> <br>
+            <input type="checkbox" name="skills" id="skill1" value="masters">
+            <label for="skill1"> Master's Degree </label> <br>
+            <input type="checkbox" name="skills" id="skill2" value="cissp">
+            <label for="skill2"> Valid CISSP Certificate </label> <br>
+            <input type="checkbox" name="skills" id="skill3" value="exp">
+            <label for="skill3"> Relevant Experience </label> <br>
+            <input type="checkbox" name="skills" id="skill4" value="ccie">
+            <label for="skill4"> CCIE Cert </label> <br>
+            <input type="checkbox" name="skills" id="skill5" value="tsc">
+            <label for="skill5"> Valid Top Secret Clearance License </label> <br>
+            <input type="checkbox" name="skills" id="skill6" value="adminexp">
+            <label for="skill6"> Experience with configurating, administration, troubleshooting, and support networking devices </label> <br>
+            <input type="checkbox" name="skills" id="skill7" value="linuxexp" selected>
+            <label for="skill7"> Experience with Linux </label> <br> <br>
 
-      <label for="otherskills"> Other Skills... </label> <br>
-      <textarea name="otherskills" id="otherskills" rows="30" cols="60">
+            <label for="otherskills"> Other Skills... </label> <br>
+            <textarea name="otherskills" id="otherskills" rows="30" cols="60">
       &#x2022; can use chopsticks
       </textarea> <br> <br>
 
-
-      <input type="submit" value="Apply">
-    </form>
+            <div class="buttonContainer">
+                <button type="submit" class="applyNow applyAlternate">APPLY</button>
+            </div>
+            
+        </form>
+    </div>
+    <footer>
+        <div class="leftfooter">
+            <p>COPYRIGHT &copy; 2023 SwinNet Pty Ltd</p>
+            <p>All rights reserved</p>
+        </div>
+        <div class="rightfooter">
+            <p>CONTACT:</p>
+            <p>Available 9AM - 5PM Weekdays</p>
+            <p>04 0404 0404</p>
+            <p>123 Swinburne Street</p>
+        </div>
+    </footer>
 
 
 <!-- Is there anything else I should include? -->
