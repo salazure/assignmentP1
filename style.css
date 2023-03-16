@@ -18,7 +18,7 @@ body {
 
 .navbar {
     overflow: hidden;
-    background-color: #1a1a1a;
+    background-color: black;
     position: sticky;
     position: -webkit-sticky;
     margin: 0;
@@ -84,7 +84,7 @@ tr:hover {
 }
 
 footer {
-    background-color: #1a1a1a;
+    background-color: black;
     display: block;
     overflow: hidden;
     padding: 30px;
