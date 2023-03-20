@@ -1,0 +1,304 @@
+ARCHIVE AFTER REDO OF FORMATTING 16/3/2023
+
+style.css: -------------------------------------------------------------------------------------------
+
+.navbar {
+    overflow: hidden;
+    background-color: #1a1a1a;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 78px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+.content {
+    padding: 20px;
+}
+
+.table, th, td {
+    border: solid 2px black;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+tr:hover {
+    background-color: #D6EEEE;
+}
+
+index:--------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+        <a href=enhancements.html>Enhancements</a>
+        <a href=about.html>About Us</a>
+        <a href=apply.html>Apply Now</a>
+        <a href=jobs.html>Job Opportunities</a>
+        <a href=index.html class="active">Homepage</a>
+    </div>
+    <p>This html document will display the homepage!</p>
+    <div>
+      <h1>This is a test to see if the css works!</h1>
+      <p>Also feel free to remove this text and alter the code, I just added this so I could test external links to CSS pages</p>
+      <p>Two guys walk into a bar, you would have thought one of them would have seen it.</p>
+    </div>
+    <p>Here's some links to the other pages:</p>
+  </body>
+</html>
+
+jobs:---------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="navbar">
+        <a href=enhancements.html>Enhancements</a>
+        <a href=about.html>About Us</a>
+        <a href=apply.html>Apply Now</a>
+        <a href=jobs.html class="active">Job Opportunities</a>
+        <a href=index.html>Homepage</a>
+    </div>
+    <p>This page will have job descriptions!</p>
+  </body>
+</html>
+
+enhancments:--------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="navbar">
+        <a href=enhancements.html class="active">Enhancements</a>
+        <a href=about.html>About Us</a>
+        <a href=apply.html>Apply Now</a>
+        <a href=jobs.html>Job Opportunities</a>
+        <a href=index.html>Homepage</a>
+    </div>
+  </body>
+</html>
+
+about:------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="navbar">
+        <a href=enhancements.html>Enhancements</a>
+        <a href=about.html class="active">About Us</a>
+        <a href=apply.html>Apply Now</a>
+        <a href=jobs.html>Job Opportunities</a>
+        <a href=index.html>Homepage</a>
+    </div>
+    <h1>ABOUT US:</h1>
+    <p>Group Name = The Swinners!</p>
+    <p>Our group has a total of 5 people!</p>
+    <p>Here's a table on ourselves:</p>
+    <div>
+      <table>
+        <tr>
+          <th>Name:</th>
+          <th>Age:</th>
+          <th>Email:</th>
+        </tr>
+        <tr>
+          <td>Emily</td>
+          <td>18</td>
+          <td>104554365@student.swin.edu.au</td>
+        </tr>
+      </table>
+    </div>
+    <p>Other than that, we also have a bunch of different interests:</p>
+    <div>
+      <h2>Add something here</h2>
+      <p>Add interests!</p>
+    </div>
+  </body>
+</html>
+
+apply:---------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="navbar">
+        <a href=enhancements.html>Enhancements</a>
+        <a href=about.html>About Us</a>
+        <a href=apply.html class="active">Apply Now</a>
+        <a href=jobs.html>Job Opportunities</a>
+        <a href=index.html>Homepage</a>
+    </div>
+
+    
+    <br>
+    <br>
+    <br>
+    
+    
+    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST" autocomplete="on">
+
+      <label for="refnum"> Reference Number: </label> <br>
+      <input type="text" id="refnum" name="refnum" maxlength="5" pattern="[A-Za-z\d]{5}" title="5 characters, alphanumeric only" required> <br> <br>
+
+      <label for="fname"> First Name: </label> <br>
+      <input type="text" id="fname" name="fname" pattern="[A-Za-z]{1,}" maxlength="20" title="Letters only" required> <br> <br>
+
+      <label for="fname"> Last Name: </label> <br>
+      <input type="text" id="lname" name="lname" pattern="[A-Za-z]{1,}" maxlength="20" title="Letters only" required> <br> <br>
+
+      <label for="dob"> Date of Birth: </label> <br>
+      <input type="date" id="dob" name="dob" required> <br> <br>		<!-- min="1850-00-00" max="2023-00-00" //could put this in  -->
+
+      <fieldset>
+        <legend> Gender </legend>
+
+        <input type="radio" id="man" name="gender" value="Man" required>
+        <label for="man"> Man </label> <br>
+
+        <input type="radio" id="woman" name="gender" value="Woman">
+        <label for="woman"> Woman </label> <br>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other"> Other </label> <br>
+
+        <input type="radio" id="idk" name="gender" value="Prefer not to say">
+        <label for="idk"> Prefer Not To Say </label> <br>
+
+        <input type="radio" id="goofy" name="gender" value="Apache Attack Helicopter">
+        <label for="goofy"> Apache Attack Helicopter </label> <br>
+        
+        <input type="radio" id="goofy2" name="gender" value="Walmart Bag">
+        <label for="goof2y"> Walmart Bag </label> <br>
+
+      </fieldset> <br>
+
+      <label for="address"> Street Address: </label> <br>
+      <input type="text" id="address" name="address" maxlength="40" required> <br> <br>
+
+      <label for="suburb"> Suburb/Town: </label> <br>
+      <input type="text" id="suburb" name="suburb" maxlength="40" required> <br> <br>
+
+      <label for="state"> State: </label>           <!-- should we chuck a break here? -->
+      <select id="state" name="state" required>
+        <option value="vic">VIC</option>
+        <option value="nsw">NSW</option>
+        <option value="qld">QLD</option>
+        <option value="nt">NT</option>
+        <option value="wa">WA</option>
+        <option value="sa">SA</option>
+        <option value="tas">TAS</option>
+        <option value="act">ACT</option>
+      </select> <br> <br>
+      <label for="email"> Email: </label> <br>
+      <input type="email" id="email" name="email" required> <br> <br>
+
+      <label for="phone"> Phone Number: </label> <br>
+      <input type="tel" id="phone" name="phone" pattern="[\d\s]{8,12}" required> <br> <br>
+
+      <label for="skills"> Skill and Qualifications: </label> <br>
+      <input type="checkbox" name="skills" id="skill1" value="masters">    				  
+      <label for="skill1"> Master's Degree </label> <br>
+      <input type="checkbox" name="skills" id="skill2" value="cissp">
+      <label for="skill2"> Valid CISSP Certificate </label> <br>
+      <input type="checkbox" name="skills" id="skill3" value="exp">
+      <label for="skill3"> Relevant Experience </label> <br>
+      <input type="checkbox" name="skills" id="skill4" value="ccie">
+      <label for="skill4"> CCIE Cert </label> <br>
+      <input type="checkbox" name="skills" id="skill5" value="tsc">
+      <label for="skill5"> Valid Top Secret Clearance License </label> <br>
+      <input type="checkbox" name="skills" id="skill6" value="adminexp">
+      <label for="skill6"> Experience with configurating, administration, troubleshooting, and support networking devices </label> <br>
+      <input type="checkbox" name="skills" id="skill7" value="linuxexp" selected>
+      <label for="skill7"> Experience with Linux </label> <br> <br>
+
+      <label for="otherskills"> Other Skills... </label> <br>
+      <textarea name="otherskills" id="otherskills" rows="30" cols="60">
+      &#x2022; can use chopsticks
+      </textarea> <br> <br>
+
+
+      <input type="submit" value="Apply">
+    </form>
+
+
+<!-- Is there anything else I should include? -->
+    <!-- content wise that should be great! you're awesome :) we'll need to do formatting later but that can wait for now haha -->
+
+
+
+<!-- 
+Requirements:
+Job reference number    exactly 5 alphanumeric characters`
+First name              max 20 alpha characters`
+Last name               max 20 alpha characters`
+Date of birth           dd/mm/yyyy
+Gender                  radio inputs grouped using a fieldset and legend
+Street Address          max 40 characters
+Suburb/town             max 40 characters
+State                   drop down selection from VIC,NSW,QLD,NT,WA,SA,TAS,ACT
+Postcode                exactly 4 digits
+Email address           validate format
+Phone number            8 to 12 digits, or spaces
+Skill list - the last item in list
+should read “Other skills...”           checkbox inputs				//does this mean we need the input textbox to appear when user checks "Other Skills..." box?
+Other skills            textarea
+-->
+
+
+
+</body>
+</html>
+
+
