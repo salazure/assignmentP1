@@ -1,3 +1,5 @@
+TO GET TO THE SCREEN TO SEE THE PROJECT, ADD /assign1 TO END OF URL
+
 # assignmentP1
 Designed for a coding assignment, specifically to a case study.
 The pages are totally static as well
