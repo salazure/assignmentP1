@@ -10,7 +10,7 @@
 
 /*html is currently being used as the background blue side colours, the colour could be replaced with an image*/
 html {
-    background-color: #174e78;
+    background-color: #003473;
 }
 
 body {
@@ -218,7 +218,7 @@ form {
 .jobHead {
     display: block;
     padding: 30px;
-    background-color: #3f91f5;
+    background-color: lightgrey;
     text-align: center;
 }
 
