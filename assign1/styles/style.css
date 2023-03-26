@@ -5,7 +5,7 @@
 
 - HOWEVER, do not add in CSS stuff which is absolute (like absolute links), only add relative stuff
 - The assignment MUST be valid CSS2.1 or CSS3 (but don't worry about this as I'll do validation checks later)
-- Don't use proprietary CSS mark-up (like -moz or -webkit) - btw you'll notice I added -webkit in navbar, I plan to remove this soon
+- Don't use proprietary CSS mark-up (like -moz or -webkit)
 */
 
 /*html is currently being used as the background blue side colours, the colour could be replaced with an image*/
