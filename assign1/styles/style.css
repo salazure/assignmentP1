@@ -74,12 +74,27 @@ body {
     margin-left: 50px;
 }
 
-/*refers to the whitespace within the html blue border*/
-.content {
-    margin-left: 150px;
-    margin-right: 150px;
-    background-color: white;
-    margin-top: 0;
+/*refers to the whitespace within the html blue border, first media only is for phones, second is for laptop view*/
+@media only screen and (max-width: 768px) {
+    .content {
+        width: 100%;
+        margin: 0;
+        background-color: white;
+        margin-top: 0;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .content {
+        /*margin-left: 150px; -- these are the old widths for testing
+        margin-right: 150px; */
+        margin-left: 7%;
+        margin-right: 7%;
+        background-color: white;
+        margin-top: 0;
+        font-size: 15px;
+    }
 }
 
 /*refers to being applicable to both the table, th and td elements*/
