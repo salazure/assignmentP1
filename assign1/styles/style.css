@@ -148,12 +148,11 @@ body {
 }
 
 /*this is for the logo, I plan to link the logo image here instead of having it on each page*/
-.logo {
-    border-radius: 20%;
-    background-color: black;
-    width: 230px;
-    height: 80px;
+#logo {
     margin-left: 50px;
+    display: inline-block;
+    width: 140px;
+    height: 80px;
 }
 
 /*refers to the whitespace within the html blue border, first media only is for phones, second is for laptop view*/
