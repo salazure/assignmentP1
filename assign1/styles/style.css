@@ -366,3 +366,36 @@ form {
     padding-bottom: 10px;
     padding-top: 10px;
 }
+
+
+
+#nameIndiv {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.groupInfo h3 {
+    color: darkblue;
+    font-size: 1.5em;
+}
+
+.photo {
+    float: right;
+}
+
+.pictureInfo aside {
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 0.5rem;
+    margin: 0.5rem;
+    box-shadow: inset 5px 0 5px -5px;
+    width: 40%;
+    float: right;
+}
+
+#contentTable {
+    width: 50%;
+    float: right;
+}
