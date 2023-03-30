@@ -74,19 +74,19 @@ body {
     top: 0;
 }
 
-    .navbar a.link {
-        float: right;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 30px 15px;
-        text-decoration: none;
-        width: 220px;
-        transition: all 0.5s;
-        cursor: pointer;
-        position: relative;
-        overflow: hidden;
-    }
+.navbar a.link {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    text-decoration: none;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
 
 .navbar a.link::before {
     content: '';
@@ -233,7 +233,7 @@ footer {
     background: url("images/page-banner-network3.jpg") no-repeat;
     background-size: 100%;
     color: white;
-    text-shadow: -4px 4px #005bff;
+    text-shadow: -4px 4px #00129f;
 }
 
 .headAll h1 {
