@@ -155,23 +155,19 @@ body {
     height: 80px;
 }
 
-/*refers to the whitespace within the html blue border, first media only is for phones, second is for laptop view*/
-@media only screen and (max-width: 768px) {
+.content {
+    transition: 0.5s;
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color: white;
+    margin-top: 0;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 850px) {
     .content {
         width: 100%;
         margin: 0;
-        background-color: white;
-        margin-top: 0;
-        font-size: 15px;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .content {
-        /*margin-left: 150px; -- these are the old widths for testing
-        margin-right: 150px; */
-        margin-left: 7%;
-        margin-right: 7%;
         background-color: white;
         margin-top: 0;
         font-size: 15px;
@@ -377,8 +373,9 @@ form {
 }
 
 .groupInfo h3 {
-    color: darkblue;
+    color: rgb(77, 133, 255);
     font-size: 1.5em;
+    text-shadow: -1.5px 1.5px #000000;
 }
 
 .photo {
