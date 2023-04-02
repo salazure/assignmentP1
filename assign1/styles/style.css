@@ -144,6 +144,9 @@ body {
 }
 
 @media only screen and (max-width: 1460px) {
+    .headAll {
+        padding: 5px;   
+    }
     .navbar .initial a.link {
         display: none;
     }
@@ -253,6 +256,7 @@ footer {
     color: white;
     text-shadow: -4px 4px #00129f;
     vertical-align: middle;
+    padding: 20px;
 }
 
 .headAll h1 {
