@@ -78,7 +78,7 @@ body {
     position: relative;
     cursor: pointer;
     transition: 0.5s;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-family: 'Arial black', arial;
 }
 
@@ -122,7 +122,7 @@ body {
     margin-right: 7%;
     background-color: white;
     margin-top: 0;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 @media only screen and (max-width: 850px) {
@@ -131,7 +131,7 @@ body {
         margin: 0;
         background-color: white;
         margin-top: 0;
-        font-size: 1em;
+        font-size: 1rem;
     }
 }
 
@@ -207,7 +207,7 @@ table {
 th {
     background-color: black;
     color: white;
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
 /*when a table row is hovered upon, this will occur*/
@@ -369,12 +369,12 @@ form {
     display: block;
     text-align: center;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .groupInfo h3 {
     color: rgb(77, 133, 255);
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-shadow: -1.5px 1.5px #000000;
 }
 
