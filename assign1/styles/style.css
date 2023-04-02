@@ -255,6 +255,7 @@ footer {
     font-size: 1.3em;
     background: url("images/page-banner-network3.jpg") no-repeat;
     background-size: 120%;
+    height: 100%;
     color: white;
     text-shadow: -4px 4px #00129f;
     vertical-align: middle;
