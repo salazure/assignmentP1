@@ -227,22 +227,24 @@ footer {
     background-color: black;
     display: block;
     overflow: hidden;
-    margin: 30px;
+    padding: 30px;
     position: relative;
     color: white;
 }
 
 /*both leftfooter and rightfooter are classes within the footer, for future optimization, I may add container separation*/
 .leftfooter {
-    float:left;
+    float: left;
     text-align: left;
-    padding-left: 120px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
 .rightfooter {
     float: right;
     text-align: right;
-    padding-right: 120px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
 
