@@ -227,7 +227,7 @@ footer {
     background-color: black;
     display: block;
     overflow: hidden;
-    padding: 30px;
+    margin: 30px;
     position: relative;
     color: white;
 }
