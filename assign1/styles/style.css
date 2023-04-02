@@ -21,6 +21,10 @@ html {
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    font-size: 30px;
+}
+
 body {
     margin: 0;
 }
