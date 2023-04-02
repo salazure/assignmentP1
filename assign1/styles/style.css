@@ -250,11 +250,10 @@ footer {
 
 .headAll {
     text-align: center;
-    font-size: 1.3em;
-    display: block;
+    vertical-align: middle;
     margin: 0;
     background: url("images/page-banner-network3.jpg") no-repeat;
-    background-size: 100%;
+    background-size: 120%;
     color: white;
     text-shadow: -4px 4px #00129f;
     vertical-align: middle;
