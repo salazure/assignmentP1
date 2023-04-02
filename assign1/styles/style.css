@@ -253,6 +253,7 @@ footer {
     background-size: 100%;
     color: white;
     text-shadow: -4px 4px #00129f;
+    vertical-align: middle;
 }
 
 .headAll h1 {
