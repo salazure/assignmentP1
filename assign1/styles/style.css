@@ -145,7 +145,7 @@ body {
 
 @media only screen and (max-width: 1460px) {
     .headAll {
-        padding: 5px;   
+        padding: 0;   
     }
     .navbar .initial a.link {
         display: none;
@@ -234,25 +234,28 @@ footer {
 
 /*both leftfooter and rightfooter are classes within the footer, for future optimization, I may add container separation*/
 .leftfooter {
-    float:left;
+    float: left;
     text-align: left;
-    padding-left: 120px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
 .rightfooter {
     float: right;
     text-align: right;
-    padding-right: 120px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
 
 .headAll {
     text-align: center;
-    font-size: 1.3em;
-    display: block;
+    vertical-align: middle;
     margin: 0;
+    font-size: 1.3em;
     background: url("images/page-banner-network3.jpg") no-repeat;
-    background-size: 100%;
+    background-size: 120%;
+    height: 100%;
     color: white;
     text-shadow: -4px 4px #00129f;
     vertical-align: middle;
