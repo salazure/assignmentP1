@@ -407,3 +407,152 @@ form {
     width: 50%;
     float: right;
 }
+
+
+
+
+
+
+
+/*apply page junk: (feel free to recycle/make changes)*/
+
+input[type=text], input[type=tel], input[type=email], input[type=date] {
+  width: 30%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  border: 3px solid white;
+  border-bottom: 3px dashed lightblue;
+  transition: 0.5s;
+  outline: none;
+}
+
+
+@keyframes background-grad{
+	from {background: linear-gradient(to bottom, white, white);}
+	to {background: linear-gradient(to bottom, white, lightblue);}
+}
+
+
+input[type=text]:hover, input[type=tel]:hover, input[type=email]:hover {
+	/* background: linear-gradient(to bottom, white, lightblue); 	
+	
+	how do i animate this?
+	
+	animation-name: background-grad;
+	animation-duration: 4s;		*/
+	
+	box-shadow: 10px 10px lightblue;
+	border: 3px dashed lightblue; 
+}
+
+input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus {
+  border: 3px solid blue;
+  width: 80%;
+  box-shadow: 10px 10px lightblue;
+}
+
+select{
+	
+	background-color: #f0f0fa;
+	transition: 0.5s;
+	padding: 10px 10px;
+	outline: none;
+	border: 3px dashed lightblue;
+	
+}
+
+select:hover, select:focus, input[type=date]:hover, input[type=date]:focus{
+	
+	box-shadow: 10px 10px lightblue;
+	border: 3px solid blue; 
+	
+}
+
+input[type=date]:focus{
+	
+	box-shadow: 10px 10px lightblue;
+    border: 3px solid blue;
+	
+}
+
+/*
+@keyframes checkboxclick{
+	
+	0% {outline: 5px dashed #e0e0f0;}
+	50% {outline: 5px solid blue;}
+	100% {outline: 5px dashed #e0e0f0;}
+}
+
+idk how to activate this on div clicked...
+
+*/
+
+#gender{
+	
+	padding: 10px;
+	background-color: #f0f0fa;
+	border: 5px dashed #e0e0f0;
+	transition:0.5s;
+	
+	margin: 5px;
+	
+}
+
+#gender:hover{
+	
+	border: 5px solid blue;
+	box-shadow: 10px 10px lightblue;
+	
+}
+
+#checkboxes{
+	
+	padding: 10px;
+	background-color: #f0f0fa;
+	margin: 5px;
+	outline: 5px dashed #e0e0f0;
+	transition:0.5s
+	
+}
+
+#checkboxes:focus, #checkboxes:hover{
+	
+	outline: 5px solid blue;
+	box-shadow: 10px 10px lightblue;
+	
+}
+
+#dob{		/*	dob = Date Of Birth	*/
+	
+	font-family: sans-serif;
+	
+}
+
+#otherskills{
+	
+	font-family: calibri, sans-serif;
+	font-size: 16px;
+	
+	padding: 10px;
+	background-color: #f0f0fa;
+	border: 5px dashed #e0e0f0;
+	transition:0.5s;
+	
+	margin: 5px;
+	outline: none;
+	resize: none;
+	
+	width: 20%;
+	height: 50px;
+	
+}
+
+#otherskills:focus, #otherskills:hover{
+		
+	border: 5px solid blue;
+	box-shadow: 10px 10px lightblue;
+	
+	width: 40%;
+	height: 150px;
+}
+
