@@ -281,7 +281,8 @@ footer {
     padding-left: 30px;
     padding-right: 30px;
     float: right;
-    text-align: right;
+    display: block;
+    text-align: left;
 }
 
 .paidService {
