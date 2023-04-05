@@ -257,7 +257,7 @@ footer {
     background-size: 120%;
     height: 100%;
     color: white;
-    text-shadow: -4px 4px #00129f;
+    text-shadow: 5px 5px blue;
     vertical-align: middle;
     padding: 20px;
 }
@@ -344,6 +344,11 @@ form {
     padding: 30px;
     background-color: lightgrey;
     text-align: center;
+	
+	
+    color: blue;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px lightblue;
 }
 
 .jobDesc {
@@ -384,9 +389,9 @@ form {
 }
 
 .groupInfo h3 {
-    color: rgb(77, 133, 255);
+    color: blue;
     font-size: 1.5rem;
-    text-shadow: -1.5px 1.5px #000000;
+    text-shadow: 2px 2px lightblue;
 }
 
 .photo {
