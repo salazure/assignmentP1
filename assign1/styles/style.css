@@ -277,7 +277,7 @@ footer {
 	text-align: left;
 	display: block;
 	width: 50%;
-	clear: right;
+	clear: left;
 }
 
 .paidService {
@@ -287,7 +287,7 @@ footer {
 	display: block;
 	text-align: left;
 	width: 50%;
-	clear: left;
+	clear: right;
 }
 
 /*container so that the button is centered on a section of the page*/
