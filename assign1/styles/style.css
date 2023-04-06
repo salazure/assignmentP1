@@ -224,6 +224,7 @@ footer {
     padding: 30px;
     position: relative;
     color: white;
+    clear: both;
 }
 
 /*both leftfooter and rightfooter are classes within the footer, for future optimization, I may add container separation*/
