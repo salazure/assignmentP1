@@ -264,30 +264,30 @@ footer {
 
 /*refers to the award class in index*/
 .awardIndex {
-    padding: 30px;
-    background-color: #6073C9;
-    text-align: center;
-    display: block;
+ padding: 30px;
+	background-color: #6073C9;
+	text-align: center;
+	display: block;
 }
 
 /*refers to the service section in index*/
 .serviceIndex {
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align:left;
-    display: block;
-    width: 50%;
-    clear: both;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: left;
+	display: block;
+	width: 50%;
+	clear: right;
 }
 
 .paidService {
-    padding-left: 30px;
-    padding-right: 30px;
-    float: right;
-    display: block;
-    text-align: left;
-    width: 50%;
-    clear: both;
+	padding-left: 30px;
+	padding-right: 30px;
+	float: right;
+	display: block;
+	text-align: left;
+	width: 50%;
+	clear: left;
 }
 
 /*container so that the button is centered on a section of the page*/
