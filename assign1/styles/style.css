@@ -273,19 +273,21 @@ footer {
 /*refers to the service section in index*/
 .serviceIndex {
     padding-left: 30px;
-    padding-right: 50px;
+    padding-right: 30px;
     text-align:left;
     display: block;
     width: 50%;
+    clear: both;
 }
 
 .paidService {
-    padding-left: 50px;
+    padding-left: 30px;
     padding-right: 30px;
     float: right;
     display: block;
     text-align: left;
     width: 50%;
+    clear: both;
 }
 
 /*container so that the button is centered on a section of the page*/
