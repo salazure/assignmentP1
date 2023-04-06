@@ -274,14 +274,15 @@ footer {
 .serviceIndex {
     padding-left: 30px;
     padding-right: 30px;
-    float: right;
-    display: block;
-    text-align: left;
+    
 }
 
 .paidService {
     padding-left: 30px;
     padding-right: 30px;
+    float: right;
+    display: block;
+    text-align: left;
 }
 
 /*container so that the button is centered on a section of the page*/
