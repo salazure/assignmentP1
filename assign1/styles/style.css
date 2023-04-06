@@ -269,6 +269,7 @@ footer {
 	background-color: #6073C9;
 	text-align: center;
 	display: block;
+	clear: both;
 }
 
 /*refers to the service section in index*/
@@ -303,6 +304,7 @@ footer {
     display: inline-block;
     transition-duration: 0.3s;
     cursor: pointer;
+    clear: both;
 }
 
 /*button additional structure*/
