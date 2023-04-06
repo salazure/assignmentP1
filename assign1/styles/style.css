@@ -277,7 +277,8 @@ footer {
 	padding-left: 30px;
 	padding-right: 30px;
 	text-align: left;
-	width: 50%;
+	width: 49%;
+	clear:both;
 }
 
 .paidService {
@@ -285,8 +286,8 @@ footer {
 	padding-right: 30px;
 	float: right;
 	text-align: left;
-	width: 50%;
-	clear: right;
+	width: 49%;
+	clear: both;
 }
 
 /*container so that the button is centered on a section of the page*/
