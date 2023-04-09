@@ -275,9 +275,9 @@ footer {
 /*refers to the service section in index*/
 .serviceIndex {
 	padding-left: 30px;
-	padding-right: 40px;
+	padding-right: 30px;
 	text-align: left;
-	width: 40%;
+	width: 45%;
 	clear: both;
 }
 
@@ -286,7 +286,7 @@ footer {
 	padding-right: 30px;
 	float: right;
 	text-align: left;
-	width: 40%;
+	width: 45%;
 	clear: both;
 }
 
