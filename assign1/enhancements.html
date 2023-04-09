@@ -35,43 +35,144 @@
         </div>
     </div>
     <div class="content">
-        <section class="headAll">
-            <h1>ENHANCEMENTS</h1>
-        </section>
-        <!--IN INTRODUCTION, INTRODUCE THE IDEA OF WHAT AN ENHANCEMENT IS, AND SUMMARISE WHAT WE APPLIED-->
-        <section class="introduction">
-            <h2>Some enhancements which we applied include:</h2>
-            <ul>
-                <li>Mobile view adjustment</li>
-                <li>Animations on Navbar and Submission Button</li>
-                <li>Accessibility Adjustments</li>
-            </ul>
-        </section>
-        <section class="enhancements">
-            <!--BELOW ENTER FIRST ENHANCEMENT APPLIED AND THEN A DESCRIPTION OF THE ENHANCEMENT-->
-            <article class="enhancementDescription">
-                <h1>Mobile view adjustment</h1>
-                <p>We have created a responsive navbar, which means that for screen sizes greater than or equal to 1460 pixels, the navbar
-                elements will be compressed into a single container. This container will be displayed whenever a user clicks on the
-                hamburger icon, and it will open on the right side like a navigation drawer.
-
-                Additionally, we have made adjustments to the content by providing margin, padding, and transition properties that are
-                relative to the screen dimensions on mobile devices</p>
-            </article>
-            <!--BELOW ENTER SECOND ENHANCEMENT APPLIED AND THEN A DESCRIPTION OF THE ENHANCEMENT-->
-            <article class="enhancementDescription">
-                <h1>Animations on Navbar and Submission Button</h1>
-                <p>We have added hover effects to the navbar menu elements and submission button, which improve user engagement and enhance
-                overall user experience. These effects can visually communicate to users that an element is clickable, such as a button
-                or link. When a user hovers over the element, it will change color or have some other visual effect that signals its
-                interactive nature.</p>
-            </article>
-            <article class="enhancementDescription">
-                    <h1>Accessibility Adjustments</h1>
-                    <p> Making changes to titles and alt tags on a website can help people with disabilities by making it easier for them to use screen readers and navigate the site. It can also help people with poor eyesight and improve the site's visibility on search engines. By providing descriptive and accurate information, we have make sure that everyone can understand and use the site. By following these practices, it is  more accessible to all users.</p>
-             </article>
-
-            <!--ADD MORE ARTICLES FOR MORE ENHANCEMENTS IF NEEDED-->
+        <article class="enhancements">
+            <section>
+                <p>In order to ensure our website possessed appropriate usability, readability and functionality, we have applied several enhancements, of which extended past the 
+                    original requirements set by this task.</p>
+                <h1>These enhancments include:</h2>
+                <ul>
+                    <li><a href="#responsive">Responsive design</a></li><br>
+                    <li><a href="#animation">Animations</a></li><br>
+                    <li>Use of favicons</li><br>
+                    <li>Text and font alterations</li><br>
+                    <li>Use of ::target</li>
+                </ul>
+            </section>
+            <section>
+                <div id="responsive">
+                    <div id="responsive" class="anchor"></div>
+                    <h2>Enhancement 1: Responsive design</h2>
+                </div>
+                <p>Nowadays, a variety of devices are used to access the internet and view webpages. As such, we cannot assume that a website will only ever be used and viewed
+                     on a computer by users. However, screen size changes and adjustments are a significant factor in how a website and its HTML and CSS is presented, so a screen
+                      which was designed for laptop-view may not be presented in an appropriate way if viewed on a mobile.
+                </p>
+                <p>Typically, a website designed for only computer/laptop view will demonstrate significant alterations to the positioning of items when opened in a smaller view,
+                     with these alterations often resulting in the page being unreadable or very hard to use.
+                </p>
+                <p>When considered in terms of customers and businesses, we cannot expect customers viewing the website on a mobile to be lenient nor patient towards a website which 
+                    isn&#39t optimized for such view. If anything, the customer may become frustrated towards the business, believing that the lack of optimization relates directly to 
+                    the business&#39s values, and thus assumes that the essence of the business is irresponsible, old-fashioned or corner-cutting, when it may have just been a simple 
+                    oversight by the business.
+                </p>
+                <p>All in all, possessing responsive design in a webpage is considered best practice in regards to usability and readability.</p>
+                <p>As such, we made sure to optimize our SwinNet business webpage for a variety of different screen sizes and a variety of different browsers, to ensure that a reader 
+                    receives the best experience when viewing the pages, regardless of what device nor browser they are using.
+                </p>
+                <h3>This enhancement has been applied in a variety of ways:</h3>
+                <ol>
+                    <li><a href="#navEnh">Navigation bar</a></li><br>
+                    <li><a href="#marginEnh">Margins</a></li><br>
+                    <li><a href="#textEnh">Text, images and tables</a></li><br>
+                    <li><a href="#1con">Conclusion</a></li>
+                </ol>
+                <div id="navEnh">
+                    <div id="navEnh" class="anchor"></div>
+                    <h3>Navigation bar:</h3>
+                </div>
+                <p><strong>Location of enhancement:</strong> at the top of each page and screen (thus no link has been provided).</p>
+                <p>In the original wide computer/laptop view, the navigation bar spreads across the full length of the page and as a result, features the logo on the leftmost side 
+                    and the links to the other pages on the rightmost side. As the screen gets smaller from this view, the links to the other pages do not reduce in size, but do 
+                    slowly move inwards towards the logo, which ensures that they do not remain absolute nor overflow off the page.
+                </p>
+                <p>When the links to the other pages reach the logo, and once they are about to overflow onto the logo or be pushed off the navigation bar (which is around 1460 pixels 
+                    screen width), the links to the other pages are then compressed and hidden under a menu icon (a small image of three horizontal lines stacked almost on top of each 
+                    other), which is then floated to the right. At this stage, the links to the other pages are accessed by hovering over the menu icon (on computer view), or by tapping 
+                    on the icon (on mobile view).
+                </p>
+                <ul>
+                    <li>Above uses the following significant elements of CSS code:</li><br>
+                    <ul>
+                        <li>@media only screen and (max-width: 1460px)</li>
+                        <ul>
+                            <li>Used in initiating screen changes once the page size decreases under this maximum width</li>
+                        </ul>
+                    </ul><br>
+                    <ul>
+                        <li>.navbar a.link:hover</li>
+                        <ul>
+                            <li>Used in animations being re-used (covered further in the enhancement of <a href="#">animation</a>)</li>
+                        </ul>
+                    </ul><br>
+                    <ul>
+                        <li>.drop:hover .dropContent</li>
+                        <ul>
+                            <li>Used in initiating the dropdown content to appear under the menu icon when screen size is under a certain pixel width</li>
+                        </ul>
+                    </ul><br>
+                    <ul>
+                        <li>And other related aspects, of which are explored further within documentation of the CSS or in other enhancements such as <a href="#animation">animation</a></li>
+                    </ul>
+                </ul>
+                <p>The menu icon behaves like the original links to other pages, and as such is &#39sticky&#39 in how it moves down the page by remaining stuck at the top of the screen once 
+                    a user scrolls. Even when viewed on a small mobile phone, both the logo and menu icons do not overflow on-top of each other.
+                </p>
+                <p>Additionally, in this state, the animations of the links for the original computer-view have been reused and made to apply to the smaller screen views as well. While 
+                    the intricacies of the animation have been explored in the [animation] enhancement, in mobile-view the navigation bar dropdown has an allocated &#39active&#39 link depending 
+                    on which page is active, with all animations applying to all links (with exclusions for the active link).
+                </p>
+                <div id="marginEnh">
+                    <div id="marginEnh" class="anchor"></div>
+                    <h3>Margins:</h3>
+                </div>
+                <p>As the width of a page increases, static margins (using pixels) would compress the page and continue compressing to a set pixel size, regardless of what device is viewing 
+                    the page and the screen size. This, if not altered would result in a webpage becoming totally unreadable when viewed on smaller screens.
+                </p>
+                <p>So, as a result, we replaced the static margins with flexible one which use percentages rather than pixels, of which allow for the margins to react and shrink/grow depending 
+                    on the width of the page. Moreover, once the page passes a specific point, the margins would recede into the sides of the webpage, allowing for the content of the page to 
+                    be seen in a cleaner and clearer way.
+                </p>
+                <p>Additionally, for extra smoothness when interacting with the page, an animation was applied to the margin when the page width falls or grows beyond a certain point, which 
+                    makes page resizing cleaner.
+                </p>
+                <div id="textEnh">
+                    <div id="textEnh" class="anchor"></div>
+                    <h3>Text, spacing and placement:</h3>
+                </div>
+                <p>A website must be readable. And in terms of readability, there is a big difference between a website featuring a massive block of text which falls off the page when the 
+                    window is resized and a website featuring small sections of text separated by headings, of which alter depending on screen width.
+                </p>
+                <p>As such, while both types may be &#39readable&#39, their level of readability and usability in terms of different people, browsers and devices differs greatly.</p>
+                <p>Thus, for a website to possess this readability to a high level, it must be designed with users in mind and understand that a webpage should never be static, but should 
+                    rather be possessing responsive design. This can be achieved in a variety of ways.
+                </p>
+                <p>In our website, we have achieved this by setting a viewpoint to ensure that the text size alters on different devices. Through the code of adding &#39meta name="viewport" 
+                    content="width=device-width, initial-scale=1.0"&#39 (code courtesy of Swinburne University Lab 05 instructions url: <a id="ref" href="https://swinburne.instructure.com/courses/49151/files/22040644?wrap=1">https://swinburne.instructure.com/</a> (website link has been shortened)) 
+                    to the head of each page (within head element of CSS).
+                </p>
+                <p>Moreover, we used a font which was rounder and clearer for the website (this is explored further in the enhancement of <a href="textFont">text and font</a>).</p>
+                <p>Additionally, we have separated passages of text with paragraph elements, sections and even extra line breaks when necessary. While this doesn&#39t go outside of the 
+                    requirements given by the task explicitly, it nevertheless adds to the responsiveness of the page.
+                </p>
+                <p>Furthermore, we have also conducted proper flexible placement for the images, tables and other rigid sections of the page to ensure that nothing gets cut off and nothing is 
+                    impacted by screen changes. For example, the [communications table] in the [About Us] page resizes depending on the screen width and never overlays with other elements nor 
+                    falls off the page.
+                </p>
+                <div id="1con">
+                    <div id="1con" class="anchor"></div>
+                    <h3>Conclusion:</h3>
+                </div>
+                <p>As a result, applying this enhancement has gone very far beyond what was originally required of the CSS requirements of the webpage. The navigation bar, margin resizing 
+                    and extra additions were not explicitly required, but we added them for extra usability, readability and to improve the performance of the webpage when it is resized in 
+                    a variety of ways.
+                </p>
+                <div id="animation">
+                    <div id="animation" class="anchor"></div>
+                    <h2>Enhancement 2: Animations</h2>
+                </div>
+                <p></p>
+            </section>
+        </article>
         </section>
     </div>
     <footer>
