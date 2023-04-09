@@ -92,6 +92,7 @@ footer {
     overflow: hidden;
     background-color: black;
     position: sticky;
+    top: 0;
 }
 
 /* this affects specifically the a links of the navbar, ensuring that they are all able to conduct animation and that they all have a set size */
@@ -601,7 +602,41 @@ tr:hover {
     padding: 30px;
 }
 
+:target h3 {
+    background-color: lightblue;
+}
 
+:target h3::before {
+    content: '\226B';
+    margin-right: 0.25em;
+}
+
+:target h2 {
+    background-color: lightblue;
+}
+
+:target h2::before {
+    content: '\226B';
+    margin-right: 0.25em;
+}
+
+.anchor {
+    display: block;
+    height: 90px;
+    margin-top: -90px;
+    visibility: hidden;
+}
+
+.enhancements a {
+    color: blue;
+    text-decoration: none;
+    border: 2px dashed lightblue;
+}
+
+#ref {
+    text-decoration: underline;
+    border: none;
+}
 
 
 
