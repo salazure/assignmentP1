@@ -277,6 +277,7 @@ footer {
 	background-color: #6073C9;
 	text-align: center;
 	display: block;
+	clear: both;
 }
 
 /*refers to the service section in index*/
@@ -291,7 +292,6 @@ footer {
 	padding-left: 30px;
 	padding-right: 30px;
 	float: right;
-	clear: both;
 	text-align: left;
 	width: 45%;
 }
