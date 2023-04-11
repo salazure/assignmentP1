@@ -291,6 +291,7 @@ footer {
 	padding-left: 30px;
 	padding-right: 30px;
 	float: right;
+	clear: both;
 	text-align: left;
 	width: 45%;
 }
