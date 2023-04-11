@@ -287,7 +287,6 @@ footer {
 	text-align: left;
 	float: left;
 	width: 45%;
-	clear: right;
 }
 
 .paidService {
@@ -296,7 +295,6 @@ footer {
 	float: right;
 	text-align: left;
 	width: 45%;
-	clear: left;
 }
 
 .otherText {
