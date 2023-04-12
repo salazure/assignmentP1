@@ -176,8 +176,98 @@
                 </div>
                 <p></p>
             </section>
+            
+            <section>
+                <div id="animation">
+                    <div id="animation" class="anchor"></div>
+                    <h2>Enhancement 2: Animations</h2>
+                    
+                </div>
+            </section>
+            <section>
+                <div id="faviconSec">
+                    <div id="animation" class="anchor"></div>
+                    <h2>Enhancement 3: Use of favicons</h2>
+
+                </div>
+            </section>
+            <section>
+                <div id="textFont">
+                    <div id="textFont" class="anchor"></div>
+                    <h2>Enhancement 4: Text and font</h2>
+
+                </div>
+            </section>
+            <section>
+                <div id="targetDest">
+                    <div id="targetDest" class="anchor"></div>
+                    <h2>Enhancement 5: Contents and the use of ::target</h2>
+                </div>
+                <p>For webpages with a lot of content, it is important that the page has ease of use in terms of navigation. For example, for Wikipedia pages, they possess a contents 
+                    table and many navigation links. 
+                </p>
+                <h3>We decided to implement both aspects for our webpage in the following ways:</h3>
+                <ol>
+                    <li><a href="#contTable">Contents table</a></li><br>
+                    <li><a href="#textLinks">Text links</a></li><br>
+                    <li><a href="#backTop">Back-to-top links</a></li><br>
+                    <li><a href="#2con">Conclusion</a></li>
+                </ol>
+                <aside>
+                    <h3>Prior knowledge:</h3>
+                    <p>Page links take you to a section of the page, without transferring you outside of the webpage itself. These destinations are known as page fragments, and 
+                        it uses the id of the destination text or heading to navigate to that section.
+                    </p>
+                </aside>
+                <div id="contTable">
+                    <div id="contTable" class="anchor"></div>
+                    <h3>Contents table:</h3>
+                </div>
+                <p>For each of the content-heavy pages (job opportunities page, about us page and enhancement page) a contents table has been applied to all.</p>
+                <p>This table contains a set of links which direct the viewer to sections of the webpage according to which link was pressed.</p>
+                <p>Upon pressing a link, the viewer is taken to the section, with the heading for that section being highlighted in blue with a :before span of an arrow.</p>
+                <p>This thus promotes usability of the content-heavy pages because it allows a viewer to skip to the section of the page they wish to see.</p>
+                <div id="textLinks">
+                    <div id="textLinks" class="anchor"></div>
+                    <h3>Text links:</h3>
+                </div>
+                <p>Much alike to the contents table, the text links involve links to sections of the page. But for this, links have been added to words or phrases which refers and 
+                    links to other sections of the page. For example, in the <a href="#animation">animation</a>section of enhancements, that section expresses and explains the various animations applied to the page.
+                </p>
+                <p>While this is quite insignificant, it still promotes the usability of the page.</p>
+                <div id="backTop">
+                    <div id="backTop" class="anchor"></div>
+                    <h3>Back-to-top links:</h3>
+                </div>
+                <p>At the bottom of every page, there is a back-to-top link which takes the user literally back to the top of the page. It makes it easier to navigate through the page 
+                    and prevents users from having to scroll all the way up again.
+                </p>
+                <p>For all these links, it has used somewhat complicated code. This is because we are only allowed to use raw HTML and CSS in this project, with JavaScript not being 
+                    marked and also jQuery likely not being allowed, thus the easy way to link between fragments of a page wasn&#39t able to be done. So, raw HTML and CSS was used.
+                </p>
+                <p>However, the code became complicated because of the navigation bar. While the navigation bar is initially seen as a &#39solid&#39 section of the page when it is fully scrolled 
+                    up, once the navigation bar enters &#39sticky&#39 mode in that it sticks to the top of the page when scrolled downwards, the bar isn&#39t seen as solid anymore.
+                </p>
+                <p>Thus, the webpage is still registering that text can fit beneath the navigation bar, something which means that any links within text would take you to the appropriate 
+                    section, but would hide the heading and beginning of text of that section underneath the navigation bar. This decreases usability and readability as the text is cut 
+                    off and the situation would cause users to become confused.
+                </p>
+                <p>To resolve this issue, an invisible block was applied to the page, present above the destination for each link. This block is totally invisible in terms of whitespace 
+                    being left behind yet acts as a buffer for the link destination, basically forcing the links to think that the destination is higher up the page than it actually is.
+                </p>
+                <p>This has been optimized to result in the heading for each link destination being present just below the navigation bar. With this complicated enhancement ensuring 
+                    that readability and usability is applied.
+                </p>
+                <div id="2con">
+                    <div id="2con" class="anchor"></div>
+                    <h3>Conclusion:</h3>
+                </div>
+                <p>This enhancement thus goes beyond what was required of the CSS since it optimizes the reading experience for users via links to page fragments.</p>
+                <p>Moreover, with the content of the enhancement, mainly being the complication of having to use raw CSS and HTML without JavaScript or jQuery to implement 
+                    this concept, it definitely goes beyond the requirements for the CSS.
+                </p>
+            </section>
         </article>
-        </section>
     </div>
     <footer>
         <div class="leftfooter">
