@@ -47,9 +47,9 @@
                 <ul>
                     <li><a href="#responsive">Responsive design</a></li><br>
                     <li><a href="#animation">Animations</a></li><br>
-                    <li>Use of favicons</li><br>
-                    <li>Text and font alterations</li><br>
-                    <li>Use of ::target</li>
+                    <li><a href="#faviconSec">Use of favicons</a></li><br>
+                    <li><a href="#textFont">Text and font alterations</a></li><br>
+                    <li><a href="#targetDest">Use of ::target</a></li>
                 </ul>
             </section>
             <section>
@@ -154,7 +154,7 @@
                     content="width=device-width, initial-scale=1.0"&#39 (code courtesy of Swinburne University Lab 05 instructions url: <a id="ref" href="https://swinburne.instructure.com/courses/49151/files/22040644?wrap=1">https://swinburne.instructure.com/</a> (website link has been shortened)) 
                     to the head of each page (within head element of CSS).
                 </p>
-                <p>Moreover, we used a font which was rounder and clearer for the website (this is explored further in the enhancement of <a href="textFont">text and font</a>).</p>
+                <p>Moreover, we used a font which was rounder and clearer for the website (this is explored further in the enhancement of <a href="#textFont">text and font</a>).</p>
                 <p>Additionally, we have separated passages of text with paragraph elements, sections and even extra line breaks when necessary. While this doesn&#39t go outside of the 
                     requirements given by the task explicitly, it nevertheless adds to the responsiveness of the page.
                 </p>
@@ -170,33 +170,170 @@
                     and extra additions were not explicitly required, but we added them for extra usability, readability and to improve the performance of the webpage when it is resized in 
                     a variety of ways.
                 </p>
-                <div id="animation">
-                    <div id="animation" class="anchor"></div>
-                    <h2>Enhancement 2: Animations</h2>
-                </div>
-                <p></p>
             </section>
-            
             <section>
                 <div id="animation">
                     <div id="animation" class="anchor"></div>
                     <h2>Enhancement 2: Animations</h2>
-                    
                 </div>
+                <p>Webpages which follow the original, default static style are boring. If you were to attempt to read through a page and navigate throughout a website with only static 
+                    effects of sharp switching between items and vague buttons with no highlights, you may find yourself confused as to the purpose of some elements or bored by the lack of 
+                    animation.
+                </p>
+                <p>As such, we made sure to include many different animations to improve the experience a person may have with the website.</p>
+                <h3>We decided to implement animations for our webpage in the following ways:</h3>
+                <ol>
+                    <li><a href="#navAni">Navigation bar</a></li><br>
+                    <li><a href="#btnAni">Buttons</a></li><br>
+                    <li><a href="#chaAni">For changing views</a></li><br>
+                    <li><a href="#inpAni">Input</a></li><br>
+                    <li><a href="#higAni">Highlights</a></li><br>
+                    <li><a href="#2con">Conclusion</a></li>
+                </ol>
+                <div id="navAni">
+                    <div id="navAni" class="anchor"></div>
+                    <h3>Navigation bar:</h3>
+                </div>
+                <p>For the navigation bar, several animations have been layered upon each other to help promote the usability of the website.</p>
+                <p>The animations apply to every button except for the logo button.</p>
+                <p>The first animation is a text animation using the span element. It involves the initial frame of the text button content, for example &#39Enhancements&#39 being offset to the 
+                    left by a few pixels, with a right arrow being added to the right of the content. All of this is done in a smooth way, with the text shifting in a smooth movement and the 
+                    arrow appearing in a fade-in way.
+                </p>
+                <p>The second animation applied is a white box which moves to cover the original background of the button. This animation functions by the webpage registering in a small white 
+                    box just outside of the navigation buttons by the left, hidden because overflow is set to hidden. It uses x transformation to smoothly move the white box across to cover 
+                    the background color of the buttons. The white box is given layer of -1 given by the z-index CSS element, which results in the white box covering the background color, 
+                    but not covering the text itself.
+                </p>
+                <p>The third animation is minor and just involves the text transitioning from white to black alongside the other animations occurring.</p>
+                <p>Altogether, this makes up the animation for the navigation bar buttons.</p>
+                
+                <div id="btnAni">
+                    <div id="btnAni" class="anchor"></div>
+                    <h3>Buttons:</h3>
+                </div>
+                <p>In regards to the other buttons (not navigation buttons) a different animation applies.</p>
+                <p>This animation is applied to the &#39Apply Now&#39 buttons in the [Job Descriptions] page and the &#39Reset&#39 button in the [Apply Now] page. It is a simplified version of the navigation bar 
+                    button animations, simply featuring a transition between white to blue (or white to red in the case of the reset button) for the background color, and the opposite for the 
+                    border. 
+                </p>
+
+                <div id="chaAni">
+                    <div id="chaAni" class="anchor"></div>
+                    <h3>For changing views:</h3>
+                </div>
+                <p>When changing from a wide view (laptop view) to a smaller view by decreasing the width of the page, some animations become active.</p>
+                <p>The first animation becomes active when the screen size decreases under 850 pixels. It makes the margins of the page decrease in a smooth motion, resulting in the contents section of the 
+                    page widening to fill 100% of the page. This animation occurs in reverse once the page size increases past 850 pixels.
+                </p>
+                <p>The second animation occurs in the [About Us] page. It becomes active when the screen size decreases under 850 pixels as well. It makes the aside and the profile photo which was aligned and 
+                    floated to the right of the page become center aligned in one smooth motion.
+                </p>
+
+                <div id="inpAni">
+                    <div id="inpAni" class="anchor"></div>
+                    <h3>Input:</h3>
+                </div>
+                <p>Within the [Apply Now] page, a variety of animations have also been applied. The main animation which they all share is that when an input box or field set is clicked/hovered upon, that 
+                    box transforms from having a static, dashed light blue border to a solid dark blue border with a box-shadow appearing too (colored in light blue). All of the movements for this, 
+                    from the border change, to the box-shadow appearing occurs in a smooth, fluid motion via use of the transition element of CSS.
+                </p>
+                <p>When clicked/hovered upon, some of the boxes also possess an extra animation where the input box widens out. This doesn&#39t apply to the fieldsets but is useful for the sections such as the first 
+                    name or last name input box as it gives extra space to type.
+                </p>
+
+                <div id="higAni">
+                    <div id="higAni" class="anchor"></div>
+                    <h3>Highlights:</h3>
+                </div>
+                <p>For some sections of each page, such as the aside in the [job description] page or the aside and photo in the [about us] page there are parts which feature highlights.</p>
+                <p>These highlights possess the same animation as the input boxes and activate upon hover. This assists a person when reading the pages as it differentiates important information from usual information.</p>
+                
+                <div id="2con">
+                    <div id="2con" class="anchor"></div>
+                    <h3>Conclusion:</h3>
+                </div>
+                <p>From this, it can be seen that the animations help promote the readability and usability of the webpage. Evidently, given we have not learnt animations in class either, this variety of animations 
+                    also goes beyond the required CSS as well.
+                </p>
+                <p>And as a final added plus, since the animations all use raw CSS and HTML, they are quick to load and work on all browsers.</p>
             </section>
             <section>
                 <div id="faviconSec">
                     <div id="animation" class="anchor"></div>
                     <h2>Enhancement 3: Use of favicons</h2>
-
                 </div>
+                <p>A favicon is a small icon which is placed in the top of the page, acting as a website icon for the page.</p>
+                <p>Favicons act to assist people in recognizing which website is which without having to show the full URL or full website title.</p>
+                <p>We applied this to help promote the website&#39s ability to be user-friendly and also to assist in differentiating our website from others.</p>
+                <p>It is present on each page and uses our logo, of which can also be seen to the left-most points of each page.</p>
+                <p>Another reason as to why possessing a favicon is important to a webpage is because favicons generally are present on genuine sites and are lacking on unsafe/shifty 
+                    looking sites. Thus, there is a need to help subtly reassure a reader that the website is not anything but authentic.
+                </p>
+                <p>The implementation of this enhancement has been done using a link in the head element of the page, of which links to the icon.</p>
             </section>
             <section>
                 <div id="textFont">
                     <div id="textFont" class="anchor"></div>
                     <h2>Enhancement 4: Text and font</h2>
-
                 </div>
+                <p>Text and fonts are essential to a webpage, as they heavily promote readability.</p>
+                <h3>For our website, we have implemented a variety of fonts in the following ways:</h3>
+                <ol>
+                    <li><a href="#enhHead">Headings</a></li><br>
+                    <li><a href="#enhSub">Subheadings</a></li><br>
+                    <li><a href="#enhBody">Body text</a></li><br>
+                    <li><a href="#backFonts">Backup fonts</a></li><br>
+                    <li><a href="#4con">Conclusion</a></li>
+                </ol>
+                <div id="enhHead">
+                    <div id="enhHead" class="anchor"></div>
+                    <h3>Headings:</h3>
+                </div>
+                <p>For the headings of the page, an imported font has been used. This font is called Press Start 2P (and can be found [here]). It features a blocky design much 
+                    like what was used for old videogame text.
+                </p>
+                <p>We chose this font because of how easy it is to read, its style and its subtle relation to the concept of networks.</p>
+                <p>It has been applied to the main headings of each page, as well as significant section headings of pages such as the About Us page, where the names for each 
+                    group member have this font applied.
+                </p>
+
+                <div id="enhSub">
+                    <div id="enhSub" class="anchor"></div>
+                    <h3>Subheadings:</h3>
+                </div>
+                <p>For the subheadings of the page, another imported font has been used. This font is called Oswald (and can be found [here]). It features a blocky but slim design, with symbols 
+                    close together.
+                </p>
+                <p>We chose this font because it places emphasis on subheadings while not overshadowing the heading text, nor being overshadowed by the body text.</p>
+                <p>This font is present in the subheadings (h3) for this page as seen above and below.</p>
+
+                <div id="enhBody">
+                    <div id="enhBody" class="anchor"></div>
+                    <h3>Body text:</h3>
+                </div>
+                <p>For the main body text, another imported font has been used. This font is called Comfortaa (and can be found [here]). It features a very rounded design with slim lettering.</p>
+                <p>We chose this font because it is easy to read and because none of the characters are too similar to each other.</p>
+
+                <div id="backFonts">
+                    <div id="backFonts" class="anchor"></div>
+                    <h3>Backup fonts:</h3>
+                </div>
+                <p>However, within the CSS, we have also implemented some backup vanilla fonts which would apply if the imported fonts did not load in or in the situation 
+                    where a section of the page was not given a font.
+                </p>
+                <p>These are vanilla fonts because every device and every browser can load them up with no issues.</p>
+                <p>For the backup, several fonts have been set, including Verdana, Arial and Helvetica of the sans-serif family.</p>
+
+                <div id="4con">
+                    <div id="4con" class="anchor"></div>
+                    <h3>Conclusion:</h3>
+                </div>
+                <p>This enhancement goes beyond the required CSS because it involves the importing of external fonts and lettering. While it is not super significant, its 
+                    implementation is significant to the viewer because in enhances their viewing experience with the page.
+                </p>
+                <p>These enhancements were applied using the code of calling @font-face in the CSS to establish the fonts using their downloaded text files.</p>
+
             </section>
             <section>
                 <div id="targetDest">
