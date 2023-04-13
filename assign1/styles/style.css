@@ -1,4 +1,16 @@
-/* ADDING FONTS ------------------------------------------------------------------------------------------------ */
+/*
+	filename: style.css
+	author: Emily Hocking, Finbarr Brennan, Tessa Mordue
+	created: 08/03/2023
+	last modified: 13/04/2023
+	description: style.css document is for all the CSS elements of the page
+	extra notes: for major references, URLs have been added in documentation, full reference is on the HTML page at the end of enhancements
+*/
+
+
+/* ADDING FONTS ------------------------------------------------------------------------------------------------ 
+	the following section establishes the imported fonts and assigns each a name which will be called
+*/
 
 @font-face {
     font-family: lesserHeadingFont;
@@ -15,12 +27,16 @@
     src: url(./fonts/PressStart2P-Regular.ttf);
 }
 
-/* BASE CSS CONFIGURATIONS ------------------------------------------------------------------------------------- */
+/* BASE CSS CONFIGURATIONS ------------------------------------------------------------------------------------- 
+	this section sets up the very base of the webpage, featuring CSS aspects which apply to all pages
+*/
 
+/* the asterisk selects every element, this thus applies a set of fonts to the page, if bodyFont doesn't register, Verdana will attempt to and so onwards */
 * {
     font-family: bodyFont, Verdana, Arial, Helvetica, sans-serif;
 }
 
+/* this code establishes the base colour for the webpage, we did this and overlayed other elements on top */
 html {
     background-color: #003473;
     font-size: 17px;
@@ -30,6 +46,7 @@ body {
     margin: 0;
 }
 
+/* this class establishes the main parent element which we have used for our webpage. It by default is a white square which we overlay the page content upon */
 .content {
     transition: 0.5s;
     margin-left: 7%;
@@ -39,7 +56,7 @@ body {
     font-size: 1rem;
 }
 
-/*this code positions the footer at the bottom of the page*/
+/* this code positions the footer at the bottom of the page */
 footer {
     background-color: black;
     display: block;
@@ -50,11 +67,11 @@ footer {
     clear: both;
 }
 
-/*both leftfooter and rightfooter are classes within the footer, for future optimization, I may add container separation*/
+/* both leftfooter and rightfooter are classes within the footer TO BE REMOVED */
 .leftfooter {
     float: left;
     text-align: left;
-    margin-left: 120px;
+    margin-left: 7%;
     margin-right: 120px;
 }
 
@@ -62,9 +79,10 @@ footer {
     float: right;
     text-align: right;
     margin-left: 120px;
-    margin-right: 120px;
+    margin-right: 7%;
 }
 
+/* this establishes the base background heading for all pages */
 .headAll {
     text-align: center;
     vertical-align: middle;
@@ -85,7 +103,9 @@ footer {
     font-weight: bold;
 }
 
-/* NAVIGATION BAR CONFIGURATIONS ------------------------------------------------------------------------------- */
+/* NAVIGATION BAR CONFIGURATIONS ------------------------------------------------------------------------------- 
+	this section is for all the navigation bar configurations and all of its animations
+*/
 
 /* navbar class acts as the parent class for the 'initial' and 'drop' class and defines the position and overflow to ensure that it sticks to the top of the page */
 .navbar {
@@ -110,7 +130,9 @@ footer {
     overflow: hidden;
 }
 
-/* this is the animation for the colour change in the navbar, it sets up for a block of white to be placed outside of the navbar button ready for animation */
+/* this is the animation for the colour change in the navbar, it sets up for a block of white to be placed outside of the navbar button ready for animation 
+	reference used URL: https://blog.logrocket.com/css-before-after-custom-animations-transitions/
+*/
 .navbar a.link::before {
     position: absolute;
     top: 0;
@@ -125,7 +147,9 @@ footer {
     transition: all 0.5s;
 }
 
-/* this initates the transformation of the white block sliding across the button and stopping on the button */
+/* this initates the transformation of the white block sliding across the button and stopping on the button 
+	reference used URL: https://blog.logrocket.com/css-before-after-custom-animations-transitions/
+*/
 .navbar a.link:hover::before {
     transform: translateX(0);
 }
@@ -138,6 +162,7 @@ footer {
     color: white;
 }
 
+/* below CSS sets link span default */
 .navbar a.link span {
     display: inline-block;
     position: relative;
@@ -147,6 +172,9 @@ footer {
     font-family: lesserHeadingFont;
 }
 
+/* below CSS initiates animation of word offset with arrow appearing to the right of text
+	reference used URL: https://www.w3schools.com/css/css3_buttons.asp
+*/
 .navbar a.link span:after {
     position: absolute;
     top: 0;
@@ -172,7 +200,7 @@ footer {
   color: white;
 }
 
-/*this is for the logo, I plan to link the logo image here instead of having it on each page*/
+/* this is logo CSS */
 #logo {
     display: inline-block;
     width: 140px;
@@ -183,7 +211,7 @@ footer {
 
 /* RESPONSIVE DESIGN ------------------------------------------------------------------------------------------- */
 
-/*fullpage and extra is for the job opportunity page, makes sure the header doesnt overflow*/
+/* fullpage and extra is for the job opportunity page, makes sure the header doesnt overflow */
 #fullpage {
     display: block;
 }
@@ -215,6 +243,7 @@ footer {
     display: none;
 }
 
+/* the below CSS is for when the size of the screen drops below 1460px*/
 @media only screen and (max-width: 1460px) {
     .navbar .initial a.link {
         display: none;
@@ -271,7 +300,6 @@ footer {
 
 /* INDEX PAGE -------------------------------------------------------------------------------------------------- */
 
-/*refers to the award class in index*/
 .awardIndex {
  	padding: 30px;
 	background-color: #6073C9;
@@ -280,7 +308,6 @@ footer {
 	clear: both;
 }
 
-/*refers to the service section in index*/
 .serviceIndex {
 	padding-left: 30px;
 	padding-right: 30px;
@@ -308,8 +335,6 @@ footer {
     padding: 30px;
     background-color: lightgrey;
     text-align: center;
-	
-	
     color: blue;
     font-size: 1.5rem;
     text-shadow: 2px 2px lightblue;
@@ -638,21 +663,36 @@ hr {
 
 .minimizeTable {
     text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.minimizeTable #lef {
+#mon, #tue, #wed, #thu, #fri {
+    display: inline-block;
+    padding: 2%;
+}
+
+dl {
+    border: 3px dashed lightblue;
+    transition: 0.5s;
+}
+
+dl:hover {
+    box-shadow: 10px 10px lightblue;
+	border: 3px solid blue; 
+}
+
+dt {
+    width: 15%;
+    background-color: red;
+    clear: left;
     float: left;
-    padding-left: 30%;
+    padding: 0.5%;
 }
 
-.minimizeTable #rig {
-    float: right;
-    padding-right: 30%;
-}
-
-.minimizeTable #cen {
-    clear: both;
-    text-align: center;
+dd {
+    background-color: blue;
+    padding: 0.5%;
 }
 
 #daySmall {
