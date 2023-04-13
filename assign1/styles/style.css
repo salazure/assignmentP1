@@ -2,17 +2,17 @@
 
 @font-face {
     font-family: lesserHeadingFont;
-    src: url(Oswald-VariableFont_wght.ttf);
+    src: url(./fonts/Oswald-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: bodyFont;
-    src: url(Comfortaa-VariableFont_wght.ttf);
+    src: url(./fonts/Comfortaa-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: headingFont;
-    src: url(PressStart2P-Regular.ttf);
+    src: url(./fonts/PressStart2P-Regular.ttf);
 }
 
 /* BASE CSS CONFIGURATIONS ------------------------------------------------------------------------------------- */
