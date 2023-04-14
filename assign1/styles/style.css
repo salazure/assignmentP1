@@ -331,8 +331,9 @@ footer {
 }
 
 #groupPhoto {
-	margin: auto;
-	object-fit: contain;
+	margin: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .otherText {
