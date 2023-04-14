@@ -330,6 +330,11 @@ footer {
 	text-align: center;
 }
 
+#groupPhoto {
+	margin: auto;
+	width: 90%;
+}
+
 .otherText {
     padding: 30px;
 }
