@@ -570,6 +570,87 @@ idk how to activate this on div clicked...
 
 /* ABOUT US PAGE ----------------------------------------------------------------------------------------------- */
 
+#imageGroup {
+    text-align: center;
+    width: 30%;
+    float: right;
+    padding: 2%;
+    transition: 0.5s;
+}
+
+#groupPhotoAbout {
+	border: 5px dashed lightblue;
+	transition: 0.5s;
+    display: inline-block;
+}
+
+#groupPhotoAbout:hover {
+    border: 5px solid blue;
+	box-shadow: 10px 10px lightblue;
+}
+
+@media only screen and (max-width: 1470px) {
+    #imageGroup {
+        float: none;
+        width: 100%;
+        margin-left: -2%;
+    }
+    #groupPhotoAbout {
+        width: 45%;
+    }
+    dl {
+        width: 100%;
+        float: none;
+        margin: auto;
+    }
+}
+
+dl {
+    border: 3px dashed lightblue;
+    transition: 0.5s;
+    width: 60%;
+    overflow: hidden;
+}
+
+dl:hover {
+    box-shadow: 10px 10px lightblue;
+	border: 3px solid blue; 
+}
+
+dt {
+    width: 20%;
+    padding: 1%;
+    float: left;
+    clear: left;
+    text-align: right;
+    font-style: bold;
+    color: blue;
+}
+
+dd {
+    width: 70%;
+    padding: 1%;
+    float: left;
+    margin: auto;
+}
+
+#daySmall {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#beneathDL {
+    clear: both;
+}
+
+#beneathDL dl {
+    width: 100%;
+}
+
+.weekTable table tr td {
+    background-color: #f9f9f9;
+}
+
 /*refers to being applicable to both the table, th and td elements*/
 .table, th, td {
     border: solid 2px black;
@@ -578,6 +659,12 @@ idk how to activate this on div clicked...
 
 table {
     border-collapse: collapse;
+    font-size: 100%;
+    width: 100%;
+    clear: both;
+}
+
+#meetupTable table {
     width: 100%;
 }
 
@@ -585,11 +672,56 @@ th {
     background-color: black;
     color: white;
     font-size: 1.3rem;
+    font-family: lesserHeadingFont, bodyFont, Verdana, Arial, Helvetica, sans-serif;
 }
 
 /*when a table row is hovered upon, this will occur*/
 tr:hover {
-    background-color: #D6EEEE;
+    background-color: lightblue;
+}
+
+.weekTable {
+    overflow-x: auto;
+    width: 100%;
+}
+
+#COS10009 {
+    background-color: lightgreen;
+}
+
+#COS10026 {
+    background-color: lightslategray;
+}
+
+#TNE10006 {
+    background-color: lightcoral;
+}
+
+#TNE10005 {
+    background-color: plum;
+}
+
+#timeTable {
+    text-align: right;
+    vertical-align: bottom;
+    padding: 0.5%;
+    padding-top: 3%;
+    padding-left: 1%;
+    height: 30px;
+    font-family: lesserHeadingFont, bodyFont, Verdana, Arial, Helvetica, sans-serif;
+    font-style: bold;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+.weekTable table tr td {
+    padding: 0.5%;
+    font-size: 0.8em;
+}
+
+#weekName {
+    width: 18.5%;
 }
 
 .groupInfo {
@@ -683,34 +815,6 @@ hr {
 #mon, #tue, #wed, #thu, #fri {
     display: inline-block;
     padding: 2%;
-}
-
-dl {
-    border: 3px dashed lightblue;
-    transition: 0.5s;
-}
-
-dl:hover {
-    box-shadow: 10px 10px lightblue;
-	border: 3px solid blue; 
-}
-
-dt {
-    width: 15%;
-    background-color: red;
-    clear: left;
-    float: left;
-    padding: 0.5%;
-}
-
-dd {
-    background-color: blue;
-    padding: 0.5%;
-}
-
-#daySmall {
-    font-weight: bold;
-    font-size: 1.2em;
 }
 
 /* ENHANCEMENTS PAGE ------------------------------------------------------------------------------------------- */
