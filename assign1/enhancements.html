@@ -52,6 +52,7 @@
                     <li><a href="#textFont">Text and font alterations</a></li><br>
                     <li><a href="#targetDest">Use of ::target</a></li>
                 </ul>
+                <p>For references, they can be found at the <a href="#references">bottom of the page</a>.</p>
             </section>
             <section>
                 <div id="responsive">
@@ -78,14 +79,14 @@
                 <ol>
                     <li><a href="#navEnh">Navigation bar</a></li><br>
                     <li><a href="#marginEnh">Margins</a></li><br>
-                    <li><a href="#textEnh">Text, images and tables</a></li><br>
+                    <li><a href="#textEnh">Text, images and placement</a></li><br>
                     <li><a href="#1con">Conclusion</a></li>
                 </ol>
                 <div id="navEnh">
                     <div id="navEnh" class="anchor"></div>
                     <h3>Navigation bar:</h3>
                 </div>
-                <p><strong>Location of enhancement:</strong> at the top of each page and screen (thus no link has been provided).</p>
+                <p id="location">Location of enhancement: at the top of each page and screen (thus no link has been provided).</p>
                 <p>In the original wide computer/laptop view, the navigation bar spreads across the full length of the page and as a result, features the logo on the leftmost side 
                     and the links to the other pages on the rightmost side. As the screen gets smaller from this view, the links to the other pages do not reduce in size, but do 
                     slowly move inwards towards the logo, which ensures that they do not remain absolute nor overflow off the page.
@@ -98,19 +99,19 @@
                 <ul>
                     <li>Above uses the following significant elements of CSS code:</li><br>
                     <ul>
-                        <li>@media only screen and (max-width: 1460px)</li>
+                        <li id="location">@media only screen and (max-width: 1460px)</li>
                         <ul>
                             <li>Used in initiating screen changes once the page size decreases under this maximum width</li>
                         </ul>
                     </ul><br>
                     <ul>
-                        <li>.navbar a.link:hover</li>
+                        <li id="location">.navbar a.link:hover</li>
                         <ul>
-                            <li>Used in animations being re-used (covered further in the enhancement of <a href="#">animation</a>)</li>
+                            <li>Used in animations being re-used (covered further in the enhancement of <a href="#animation">animation</a>)</li>
                         </ul>
                     </ul><br>
                     <ul>
-                        <li>.drop:hover .dropContent</li>
+                        <li id="location">.drop:hover .dropContent</li>
                         <ul>
                             <li>Used in initiating the dropdown content to appear under the menu icon when screen size is under a certain pixel width</li>
                         </ul>
@@ -123,13 +124,14 @@
                     a user scrolls. Even when viewed on a small mobile phone, both the logo and menu icons do not overflow on-top of each other.
                 </p>
                 <p>Additionally, in this state, the animations of the links for the original computer-view have been reused and made to apply to the smaller screen views as well. While 
-                    the intricacies of the animation have been explored in the [animation] enhancement, in mobile-view the navigation bar dropdown has an allocated &#39active&#39 link depending 
+                    the intricacies of the animation have been explored in the <a href="#animation">animation</a> enhancement, in mobile-view the navigation bar dropdown has an allocated &#39active&#39 link depending 
                     on which page is active, with all animations applying to all links (with exclusions for the active link).
                 </p>
                 <div id="marginEnh">
                     <div id="marginEnh" class="anchor"></div>
                     <h3>Margins:</h3>
                 </div>
+                <p id="location">Location of enhancement: on the sides of each page and screen (thus no link has been provided).</p>
                 <p>As the width of a page increases, static margins (using pixels) would compress the page and continue compressing to a set pixel size, regardless of what device is viewing 
                     the page and the screen size. This, if not altered would result in a webpage becoming totally unreadable when viewed on smaller screens.
                 </p>
@@ -142,8 +144,9 @@
                 </p>
                 <div id="textEnh">
                     <div id="textEnh" class="anchor"></div>
-                    <h3>Text, spacing and placement:</h3>
+                    <h3>Text, images and placement:</h3>
                 </div>
+                <p id="location">Location of enhancement: within each page and screen (thus no link has been provided).</p>
                 <p>A website must be readable. And in terms of readability, there is a big difference between a website featuring a massive block of text which falls off the page when the 
                     window is resized and a website featuring small sections of text separated by headings, of which alter depending on screen width.
                 </p>
@@ -195,6 +198,7 @@
                     <div id="navAni" class="anchor"></div>
                     <h3>Navigation bar:</h3>
                 </div>
+                <p id="location">Location of enhancement: at the top of each page and screen (thus no link has been provided).</p>
                 <p>For the navigation bar, several animations have been layered upon each other to help promote the usability of the website.</p>
                 <p>The animations apply to every button except for the logo button.</p>
                 <p>The first animation is a text animation using the span element. It involves the initial frame of the text button content, for example &#39Enhancements&#39 being offset to the 
@@ -213,8 +217,9 @@
                     <div id="btnAni" class="anchor"></div>
                     <h3>Buttons:</h3>
                 </div>
+                <p id="location">Location of enhancement: within the <a href="jobs.html#buttonEnhLink">Job Description</a> page and <a href="apply.html#buttonEnhLink2">Apply Now</a> page.</p>
                 <p>In regards to the other buttons (not navigation buttons) a different animation applies.</p>
-                <p>This animation is applied to the &#39Apply Now&#39 buttons in the [Job Descriptions] page and the &#39Reset&#39 button in the [Apply Now] page. It is a simplified version of the navigation bar 
+                <p>This animation is applied to the &#39Apply Now&#39 buttons in the <a href="jobs.html#buttonEnhLink">Job Description</a> page and the &#39Reset&#39 button in the <a href="apply.html#buttonEnhLink2">Apply Now</a> page. It is a simplified version of the navigation bar 
                     button animations, simply featuring a transition between white to blue (or white to red in the case of the reset button) for the background color, and the opposite for the 
                     border. 
                 </p>
@@ -223,11 +228,12 @@
                     <div id="chaAni" class="anchor"></div>
                     <h3>For changing views:</h3>
                 </div>
+                <p id="location">Location of enhancement: changing views animation is inbuilt within every page (thus no link has been provided), a secondary changing views animation can be found in the <a href="about.html#topA">About Us</a> page.</p>
                 <p>When changing from a wide view (laptop view) to a smaller view by decreasing the width of the page, some animations become active.</p>
                 <p>The first animation becomes active when the screen size decreases under 850 pixels. It makes the margins of the page decrease in a smooth motion, resulting in the contents section of the 
                     page widening to fill 100% of the page. This animation occurs in reverse once the page size increases past 850 pixels.
                 </p>
-                <p>The second animation occurs in the [About Us] page. It becomes active when the screen size decreases under 850 pixels as well. It makes the aside and the profile photo which was aligned and 
+                <p>The second animation occurs in the <a href="about.html#topA">About Us</a> page. It becomes active when the screen size decreases under 850 pixels as well. It makes the aside and the profile photo which was aligned and 
                     floated to the right of the page become center aligned in one smooth motion.
                 </p>
 
@@ -235,7 +241,8 @@
                     <div id="inpAni" class="anchor"></div>
                     <h3>Input:</h3>
                 </div>
-                <p>Within the [Apply Now] page, a variety of animations have also been applied. The main animation which they all share is that when an input box or field set is clicked/hovered upon, that 
+                <p id="location">Location of enhancement: within the <a href="apply.html">Apply Now</a> page.</p>
+                <p>Within the <a href="apply.html#topP">Apply Now</a> page, a variety of animations have also been applied. The main animation which they all share is that when an input box or field set is clicked/hovered upon, that 
                     box transforms from having a static, dashed light blue border to a solid dark blue border with a box-shadow appearing too (colored in light blue). All of the movements for this, 
                     from the border change, to the box-shadow appearing occurs in a smooth, fluid motion via use of the transition element of CSS.
                 </p>
@@ -247,7 +254,8 @@
                     <div id="higAni" class="anchor"></div>
                     <h3>Highlights:</h3>
                 </div>
-                <p>For some sections of each page, such as the aside in the [job description] page or the aside and photo in the [about us] page there are parts which feature highlights.</p>
+                <p id="location">Location of enhancement: within the <a href="jobs.html">Job Description</a> page and <a href="about.html">About Us</a> page.</p>
+                <p>For some sections of each page, such as the aside in the <a href="jobs.html#highlightEnh">Job Description</a> page or the aside and photo in the <a href="about.html#highlightEnh2">About Us</a> page there are parts which feature highlights.</p>
                 <p>These highlights possess the same animation as the input boxes and activate upon hover. This assists a person when reading the pages as it differentiates important information from usual information.</p>
                 
                 <div id="2con">
@@ -264,6 +272,7 @@
                     <div id="animation" class="anchor"></div>
                     <h2>Enhancement 3: Use of favicons</h2>
                 </div>
+                <p id="location">Location of enhancement: at the top of the page tab for the website pages outside of the actual webpage (thus no link has been provided).</p>
                 <p>A favicon is a small icon which is placed in the top of the page, acting as a website icon for the page.</p>
                 <p>Favicons act to assist people in recognizing which website is which without having to show the full URL or full website title.</p>
                 <p>We applied this to help promote the website&#39s ability to be user-friendly and also to assist in differentiating our website from others.</p>
@@ -291,7 +300,8 @@
                     <div id="enhHead" class="anchor"></div>
                     <h3>Headings:</h3>
                 </div>
-                <p>For the headings of the page, an imported font has been used. This font is called Press Start 2P (and can be found [here]). It features a blocky design much 
+                <p id="location">Location of enhancement: used throughout the website, for example, can be seen from the 'Enhancement 4: Text and Font' heading above (thus no link has been provided).</p>
+                <p>For the headings of the page, an imported font has been used. This font is called Press Start 2P (and can be found on <a href="https://fonts.google.com/specimen/Press+Start+2P/">Google Fonts</a>). It features a blocky design much 
                     like what was used for old videogame text.
                 </p>
                 <p>We chose this font because of how easy it is to read, its style and its subtle relation to the concept of networks.</p>
@@ -303,7 +313,8 @@
                     <div id="enhSub" class="anchor"></div>
                     <h3>Subheadings:</h3>
                 </div>
-                <p>For the subheadings of the page, another imported font has been used. This font is called Oswald (and can be found [here]). It features a blocky but slim design, with symbols 
+                <p id="location">Location of enhancement: used throughout the website, for example, can be seen from the 'Subheadings:' subheading just above (thus no link has been provided).</p>
+                <p>For the subheadings of the page, another imported font has been used. This font is called Oswald (and can be found on <a href="https://fonts.google.com/specimen/Oswald/">Google Fonts</a>). It features a blocky but slim design, with symbols 
                     close together.
                 </p>
                 <p>We chose this font because it places emphasis on subheadings while not overshadowing the heading text, nor being overshadowed by the body text.</p>
@@ -313,7 +324,8 @@
                     <div id="enhBody" class="anchor"></div>
                     <h3>Body text:</h3>
                 </div>
-                <p>For the main body text, another imported font has been used. This font is called Comfortaa (and can be found [here]). It features a very rounded design with slim lettering.</p>
+                <p id="location">Location of enhancement: used throughout the website, including this text (thus no link has been provided).</p>
+                <p>For the main body text, another imported font has been used. This font is called Comfortaa (and can be found on <a href="https://fonts.google.com/specimen/Comfortaa/">Google Fonts</a>). It features a very rounded design with slim lettering.</p>
                 <p>We chose this font because it is easy to read and because none of the characters are too similar to each other.</p>
 
                 <div id="backFonts">
@@ -325,6 +337,12 @@
                 </p>
                 <p>These are vanilla fonts because every device and every browser can load them up with no issues.</p>
                 <p>For the backup, several fonts have been set, including Verdana, Arial and Helvetica of the sans-serif family.</p>
+                <ul>
+                    <li>The explicit code for this is (for the example of adding the custom heading font to an element):</li><br>
+                    <ul>
+                        <li id="location">font-family: headingFont, bodyFont, Verdana, Arial, Helvetica, sans-serif;</li>
+                    </ul>
+                </ul>
 
                 <div id="4con">
                     <div id="4con" class="anchor"></div>
@@ -344,6 +362,14 @@
                 <p>For webpages with a lot of content, it is important that the page has ease of use in terms of navigation. For example, for Wikipedia pages, they possess a contents 
                     table and many navigation links. 
                 </p>
+                <div class="pictureInfo">
+                    <aside>
+                        <h3>Prior knowledge:</h3>
+                        <p>Page links take you to a section of the page, without transferring you outside of the webpage itself. These destinations are known as page fragments, and 
+                            it uses the id of the destination text or heading to navigate to that section.
+                        </p>
+                    </aside>
+                </div>
                 <h3>We decided to implement both aspects for our webpage in the following ways:</h3>
                 <ol>
                     <li><a href="#contTable">Contents table</a></li><br>
@@ -351,17 +377,12 @@
                     <li><a href="#backTop">Back-to-top links</a></li><br>
                     <li><a href="#2con">Conclusion</a></li>
                 </ol>
-                <aside>
-                    <h3>Prior knowledge:</h3>
-                    <p>Page links take you to a section of the page, without transferring you outside of the webpage itself. These destinations are known as page fragments, and 
-                        it uses the id of the destination text or heading to navigate to that section.
-                    </p>
-                </aside>
                 <div id="contTable">
                     <div id="contTable" class="anchor"></div>
                     <h3>Contents table:</h3>
                 </div>
-                <p>For each of the content-heavy pages (job opportunities page, about us page and enhancement page) a contents table has been applied to all.</p>
+                <p id="location">Location of enhancement: used in the <a href="jobs.html">Job Opportunities</a> page and the <a href="#topE">Enhancements</a> page.</p>
+                <p>For each of the major content-heavy pages (<a href="jobs.html">Job Opportunities</a> page and the <a href="#topE">Enhancements</a> page) a contents table in some form has been applied to both.</p>
                 <p>This table contains a set of links which direct the viewer to sections of the webpage according to which link was pressed.</p>
                 <p>Upon pressing a link, the viewer is taken to the section, with the heading for that section being highlighted in blue with a :before span of an arrow.</p>
                 <p>This thus promotes usability of the content-heavy pages because it allows a viewer to skip to the section of the page they wish to see.</p>
@@ -369,6 +390,7 @@
                     <div id="textLinks" class="anchor"></div>
                     <h3>Text links:</h3>
                 </div>
+                <p id="location">Location of enhancement: used throughout the website, including in the above links for this enhancement's mini contents table (thus no link has been provided).</p>
                 <p>Much alike to the contents table, the text links involve links to sections of the page. But for this, links have been added to words or phrases which refers and 
                     links to other sections of the page. For example, in the <a href="#animation">animation</a>section of enhancements, that section expresses and explains the various animations applied to the page.
                 </p>
@@ -377,6 +399,7 @@
                     <div id="backTop" class="anchor"></div>
                     <h3>Back-to-top links:</h3>
                 </div>
+                <p id="location">Location of enhancement: at the very bottom of every page on the website, including at the bottom of this one.</p>
                 <p>At the bottom of every page, there is a back-to-top link which takes the user literally back to the top of the page. It makes it easier to navigate through the page 
                     and prevents users from having to scroll all the way up again.
                 </p>
@@ -405,6 +428,85 @@
                     this concept, it definitely goes beyond the requirements for the CSS.
                 </p>
             </section>
+            <section>
+                <div id="references">
+                    <div id="references" class="anchor"></div>
+                    <h2>References List:</h2>
+                </div>
+                <p>For this project, a massive number of references were used to help ensure that the website has full functionality. Due to this, the references have been seperated by type and by origin in some cases</p>
+                <p>Websites and links used have been referenced to in terms of the Harvard referencing style.</p>
+                <p id="location">Format: Author name + publication date + title of article + title of journal/website + day accessed + URL link</p>
+                <h3>Here is are the references sections:</h3>
+                <ol>
+                    <li><a href="#refImages">References used for images</a></li><br>
+                    <li><a href="#refNav">References used for navigation bar</a></li><br>
+                    <li><a href="#refJob">References used for Job Opportunities page</a></li><br>
+                    <li><a href="#refEnhancements">References used for Enhancements page</a></li>
+                </ol>
+
+                <div id="refImages">
+                    <div id="refImages" class="anchor"></div>
+                    <h3>References used for images:</h3>
+                </div>
+                <p>Only one external image was used (logo was created by us), that is the image which acts as a background behind each heading of each page such as at the top of <a href="enhancements.html">this</a> page.</p>
+                <p>Also note that the author, publication date and other information is unknown.</p>
+                <ul>
+                    <li id="location">Author unknown, crossroads technologies linkedin, CuteWallpaper.org, accessed 24th March, URL: <a href="https://cutewallpaper.org/27x/hm2jfp0j9/273174879.html">https://cutewallpaper.org/27x/hm2jfp0j9/273174879.html</a></li>
+                </ul>
+                
+                <div id="refNav">
+                    <div id="refNav" class="anchor"></div>
+                    <h3>References used for navigation bar and animations:</h3>
+                </div>
+                <p>Major origin of information used to create the navigation bar and apply animations was from <a href="https://www.w3schools.com/">https://www.w3schools.com/</a>.</p>
+                <ul>
+                    <li id="location">Author unknown, publication date unknown, HOW TO - Round Buttons, W3Schools, accessed 28th March, URL: <a href="https://www.w3schools.com/howto/howto_css_round_buttons.asp">https://www.w3schools.com/howto/howto_css_round_buttons.asp</a></li><br>
+                    <li id="location">Author unknown, publication date unknown, HOW TO - Animate Buttons, W3Schools, accessed 28th March, URL: <a href="https://www.w3schools.com/howto/howto_css_animate_buttons.asp">https://www.w3schools.com/howto/howto_css_animate_buttons.asp</a></li><br>
+                    <li id="location">Author unknown, publication date unknown, HOW TO - Fading Buttons, W3Schools, accessed 28th March, URL: <a href="https://www.w3schools.com/howto/howto_css_fading_buttons.asp">https://www.w3schools.com/howto/howto_css_fading_buttons.asp</a></li><br>
+                    <li id="location">Author unknown, publication date unknown, HOW TO - More Button in Navbar, W3Schools, accessed 28th March, URL: <a href="https://www.w3schools.com/howto/howto_css_more_button.asp">https://www.w3schools.com/howto/howto_css_more_button.asp</a></li><br>
+                    <li id="location">Author unknown, publication date unknown, CSS :active Selector, W3Schools, accessed 28th March, URL: <a href="https://www.w3schools.com/cssref/sel_active.php">https://www.w3schools.com/cssref/sel_active.php</a></li><br>
+                    <li id="location">Author unknown, publication date unknown, CSS Transitions, accessed 28th March, URL: <a href="https://www.w3schools.com/css/css3_transitions.asp">https://www.w3schools.com/css/css3_transitions.asp</a></li><br>
+                    <li id="location">Author unknown, publication date unknown, CSS background-image Property, W3Schools, accessed 28th March, URL: <a href="https://www.w3schools.com/cssref/pr_background-image.php">https://www.w3schools.com/cssref/pr_background-image.php</a></li><br>
+                    <li id="location">David Herbert, November 20, 2022, CSS ::before and ::after for custom animations and transitions, LogRocket, accessed 28th March, URL: <a href="https://blog.logrocket.com/css-before-after-custom-animations-transitions/">https://blog.logrocket.com/css-before-after-custom-animations-transitions/</a></li><br>
+                    <li id="location">Ivy Walobwa, January 21, 2022, Creating a responsive mobile menu with CSS without JavaScript, LogRocket, accessed 29th March, URL: <a href="https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/">https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/</a></li><br>
+                    <li id="location">Ryan Menezes, publication date unknown, How to Add an Image to a CSS File, Chron., accessed 29th March, URL: <a href="https://smallbusiness.chron.com/add-image-css-file-51301.html">https://smallbusiness.chron.com/add-image-css-file-51301.html</a></li><br>
+                    <li id="location">Author unknown, publication date unknown, Using CSS transitions, MDN, accessed 1st April, URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions</a></li><br>
+                    <li id="location">Author unknown, publication date unknown, UTF-8 Arrows, W3Schools, accessed 1st April, URL: <a href="https://www.w3schools.com/charsets/ref_utf_arrows.asp">https://www.w3schools.com/charsets/ref_utf_arrows.asp</a></li><br>
+                    <li id="location">Ali Spittel, publication date unknown, Create Rainbow Text with CSS: Three Different Methods, We Learn Code, accessed 1st April, URL: <a href="https://welearncode.com/rainbow-text/">https://welearncode.com/rainbow-text/</a></li><br>
+                    <li id="location">Author unknown, publication date unknown, HOW TO - Responsive Navbar with Dropdown, W3Schools, accessed 1st April, URL: <a href="https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp">https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp</a></li><br>
+                    <li id="location">Author unknown, publication date unknown, HOW TO - Hero Image, W3Schools, accessed 1st April, URL: <a href="https://www.w3schools.com/howto/howto_css_hero_image.asp">https://www.w3schools.com/howto/howto_css_hero_image.asp</a></li><br>
+                    <li id="location">Author unknown, publication date unknown, HOW TO - Responsive Images, W3Schools, accessed 1st April, URL: <a href="https://www.w3schools.com/howto/howto_css_image_responsive.asp">https://www.w3schools.com/howto/howto_css_image_responsive.asp</a></li><br>
+                    <li id="location">Author unknown, publication date unknown, Resizing background images with background-size, MDN, accessed 1st April, URL: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Resizing_background_images">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Resizing_background_images</a></li><br>
+                    <li id="location">Author unknown, publication date unknown, CSS Font Family List, TutorialBrain, accessed 1st April, URL: <a href="https://www.tutorialbrain.com/css_tutorial/css_font_family_list/">https://www.tutorialbrain.com/css_tutorial/css_font_family_list/</a></li><br>
+                    <li id="location">Andor Nagy, publication date unknown, Pure CSS Responsive Dropdown Menu, CodePen, accessed 1st April, URL: <a href="https://codepen.io/andornagy/pen/RNeydj">https://codepen.io/andornagy/pen/RNeydj</a></li><br>
+                    <li id="location">Author unknown, publication date unknown, CSS Layout - Overflow, W3Schools, accessed 1st April, URL: <a href="https://www.w3schools.com/css/css_overflow.asp"></a>https://www.w3schools.com/css/css_overflow.asp</li>
+                </ul>
+
+                <div id="refJob">
+                    <div id="refJob" class="anchor"></div>
+                    <h3>References used for Job Opportunities page:</h3>
+                </div>
+                <p>Some resources were used for researching job titles, including the following:</p>
+                <ul>
+                    <li id="location">Author unknown, publication date unknown, Network Architect Overview, Glassdoor, accessed 27th March, URL: <a href="https://www.glassdoor.com.au/Career/network-architect-career_KO0,17.htm">https://www.glassdoor.com.au/Career/network-architect-career_KO0,17.htm</a></li><br>
+                    <li id="location">Author unknown, publication date unknown, What is VMware?, IBM, accessed 27th March, URL: <a href="https://www.ibm.com/topics/vmware">https://www.ibm.com/topics/vmware</a></li><br>
+                    <li id="location">Author unknown, publication date unknown, Principle Network Engineer, Field Engineer, accessed 27th March, URL: <a href="https://www.fieldengineer.com/skills/principal-network-engineer">https://www.fieldengineer.com/skills/principal-network-engineer</a></li><br>
+                    <li id="location">Author unknown, publication date unknown, Network Design Engineer, Field Engineer, accessed 27th March, URL: <a href="https://www.fieldengineer.com/skills/network-design-engineer">https://www.fieldengineer.com/skills/network-design-engineer</a></li>
+                </ul>
+                
+                <div id="refEnhancements">
+                    <div id="refEnhancements" class="anchor"></div>
+                    <h3>References used for Enhancements page:</h3>
+                </div>
+                <p>Only one reference was used in this page, and that was for the further study under the enhancement of <a href="#targetDest">linking to page sections</a>.</p>
+                <ul>
+                    <li id="location">anniemcg, March 7, 2017, Linking to Page Fragments in HTML5, In Easy Steps, accessed 12th April, URL: <a href="https://ineasysteps.com/linking-page-fragments-html5/">https://ineasysteps.com/linking-page-fragments-html5/</a></li>
+                </ul>
+
+
+
+            </section>
+            <div id="topOfPage"><a href="#topE">CLICK HERE TO RETURN TO TOP OF PAGE</a></div>
         </article>
     </div>
     <footer>
