@@ -54,6 +54,7 @@ body {
     background-color: white;
     margin-top: 0;
     font-size: 1rem;
+    overflow: hidden;
 }
 
 /* this code positions the footer at the bottom of the page */
@@ -125,6 +126,7 @@ footer {
     background-color: black;
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 
 /* this affects specifically the a links of the navbar, ensuring that they are all able to conduct animation and that they all have a set size */
