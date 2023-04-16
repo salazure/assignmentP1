@@ -495,7 +495,7 @@ footer {
 
 @media only screen and (max-width: 1000px) {
     .speech-bubble {
-        margin-left: 20%;
+        margin-left: 10%;
     }
     #tableContents {
         float: none;
