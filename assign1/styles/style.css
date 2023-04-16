@@ -103,6 +103,17 @@ footer {
     font-weight: bold;
 }
 
+#topOfPage {
+    float: right;
+    margin: 1%;
+}
+
+#topOfPage a {
+    color: blue;
+    text-decoration: none;
+    border: 2px dashed lightblue;
+}
+
 /* NAVIGATION BAR CONFIGURATIONS ------------------------------------------------------------------------------- 
 	this section is for all the navigation bar configurations and all of its animations
 */
@@ -342,15 +353,86 @@ footer {
 
 /* JOB DESCRIPTIONS PAGE---------------------------------------------------------------------------------------- */
 
+.salaryAs aside {
+    width: 25%;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0.5rem;
+    margin: 2%;
+    text-align: left;
+    float: right;
+	border: 3px dashed lightblue;
+    transition: 0.5s;
+}
+
+.salaryAs aside h3 {
+    text-align: center;
+}
+
+#special {
+    font-weight: bold;
+    color: blue;
+}
+
+.salaryAs aside:hover {
+    box-shadow: 10px 10px lightblue;
+	border: 3px solid blue; 
+}
+
+.speech-bubble {
+  position: relative;
+  margin-left: 30%;
+  padding: 1em;
+  width: 8em; height: 4em;
+  border-radius: .25em;
+  transform: rotate(-4deg) rotateY(15deg);
+  background: #629bdd;
+  font: 1.5em/4 lesserHeadingFont, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.speech-bubble:before, .speech-bubble:after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+}
+
+.speech-bubble:after {
+  top: 0; right: 0; bottom: 0; left: 0;
+  border-radius: inherit;
+  transform: rotate(2deg) translate(.35em, -.15em) scale(1.02);
+  background: #daf3ff;
+}
+
+.speech-bubble:before {
+  border: solid 0 transparent;
+  border-right: solid 3.5em #daf3ff;
+  border-bottom: solid .25em #629bdd;
+  bottom: .25em; left: 1.25em;
+  width: 0; height: 1em;
+  transform: rotate(45deg) skewX(75deg);
+}
+
+.job h3 {
+    font-family: lesserHeadingFont, bodyFont, Verdana, Arial, Helvetica, sans-serif;
+}
+
+#clearAll {
+    clear: both;
+}
 
 .jobHead {
     display: block;
-    padding: 30px;
+    padding: 1%;
     background-color: lightgrey;
     text-align: center;
+}
+
+.jobHead h1 {
     color: blue;
-    font-size: 1.5rem;
-    text-shadow: 2px 2px lightblue;
+    font-size: 2rem;
+    text-shadow: 4px 4px lightblue;
+    font-family: lesserHeadingFont, bodyFont, Verdana, Arial, Helvetica, sans-serif;
 }
 
 .jobDesc {
@@ -375,6 +457,65 @@ footer {
     padding-right: 30px;
 }
 
+.job ol li a {
+    color: blue;
+    text-decoration: none;
+    border: 2px dashed lightblue;
+}
+
+:target h1::before {
+    content: '\226B';
+    margin-right: 0.25em;
+}
+
+#tableContents {
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 2px dashed lightblue;
+    transition: all 0.5s;
+    margin: 1%;
+    width: 40%;
+    float: right;
+}
+
+#tableContents:hover {
+    box-shadow: 10px 10px lightblue;
+	border: 3px solid blue; 
+}
+
+#introduction {
+    float: left;
+    width: 40%;
+    margin: 1%;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 1000px) {
+    #tableContents {
+        float: none;
+        width: auto;
+        margin: 2%;
+        padding: none;
+        overflow-wrap: break-word;
+    }
+    #introduction {
+        float: none;
+        width: auto;
+        margin: 2%;
+        padding: none;
+        overflow-wrap: break-word;
+    }
+    .salaryAs aside {
+        float: none;
+        width: auto;
+        margin: 2%;
+        padding: none;
+        overflow-wrap: break-word;
+    }
+}
+
 /* APPLY PAGE -------------------------------------------------------------------------------------------------- */
 
 form legend {
@@ -393,13 +534,14 @@ form fieldset label {
     font-size: 1rem;
 }
 
+
 /*container so that the button is centered on a section of the page*/
 .buttonContainer {
     text-align: center;
     padding-bottom: 25px;
 }
 
-/*button structure*/
+/*button structure for submit button*/
 .applyNow {
     padding: 25px 50px;
     border: none;
@@ -411,16 +553,41 @@ form fieldset label {
     clear: both;
 }
 
-/*button additional structure*/
+/*button additional structure for submit button*/
 .applyAlternate {
     background-color: white;
     color: black;
     border: 2px solid #3992ff;
 }
 
-/*when hovered, animation plays*/
+/*when hovered, animation plays for submit button*/
 .applyAlternate:hover {
     background-color: #3992ff;
+    color: white;
+}
+
+/*button structure for reset button*/
+.applyNow2 {
+    padding: 25px 50px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    clear: both;
+}
+
+/*button additional structure for reset button*/
+.applyAlternate2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #ff3939;
+}
+
+/*when hovered, animation plays for reset button*/
+.applyAlternate2:hover {
+    background-color: #ff3939;
     color: white;
 }
 
@@ -602,6 +769,15 @@ idk how to activate this on div clicked...
         width: 100%;
         float: none;
         margin: auto;
+    }
+    dt {
+        float: none;
+        clear: none;
+        display: block;
+    }
+    dd {
+        float: none;
+        clear: none;
     }
 }
 
