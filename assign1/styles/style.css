@@ -805,16 +805,20 @@ idk how to activate this on div clicked...
     dl {
         width: 100%;
         float: none;
+        clear: both;
         margin: auto;
     }
     dt {
+        text-align: left;
+        width: auto;
         float: none;
-        clear: none;
-        display: block;
+        clear: both;
     }
     dd {
+        text-align: left;
+        width: auto;
         float: none;
-        clear: none;
+        clear: both;
     }
 }
 
