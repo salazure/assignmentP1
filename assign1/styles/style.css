@@ -68,7 +68,18 @@ footer {
     clear: both;
 }
 
-/* both leftfooter and rightfooter are classes within the footer TO BE REMOVED */
+/* all footer classes are classes within the footer */
+.linkfooter {
+    text-align: center;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1310px) {
+    .linkfooter {
+        clear: both;
+    }
+}
+
 .leftfooter {
     float: left;
     text-align: left;
@@ -1042,5 +1053,22 @@ hr {
     border: none;
 }
 
+.enhancements h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: blue;
+    text-shadow: 4px 4px lightblue;
+    font-family: headingFont, Verdana, Arial, Helvetica, sans-serif;
+    overflow-wrap: break-word;
+}
 
+.enhancements h3 {
+    font-family: lesserHeadingFont, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+}
+
+#location {
+    font-weight: bold;
+    color: blue;
+}
 
