@@ -922,6 +922,7 @@ tr:hover {
     color: blue;
     text-shadow: 4px 4px lightblue;
     font-family: headingFont;
+    overflow-wrap: break-word;
 }
 
 hr {
