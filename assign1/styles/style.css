@@ -95,6 +95,7 @@ footer {
     text-shadow: 5px 5px blue;
     vertical-align: middle;
     padding: 20px;
+    overflow-wrap: break-word;
 }
 
 .headAll h1 {
